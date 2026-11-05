@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Handwritten storybook headline font */
+  --font-hand: 'Caveat', cursive, sans-serif;
+  /* Clean readable body font */
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* Editorial and story quotes font */
+  --font-serif: 'Lora', Georgia, serif;
+
+  /* Moss Green palette — Bornean peat forest, lush canopy, living habitat */
+  --color-moss-50: #f3f7f2;
+  --color-moss-100: #e2ede1;
+  --color-moss-200: #c5ddc3;
+  --color-moss-300: #9dc49a;
+  --color-moss-400: #6fa46c;
+  --color-moss-500: #4d8649;
+  --color-moss-600: #3c6c39;
+  --color-moss-700: #31562e;
+  --color-moss-800: #294627;
+  --color-moss-900: #223a20;
+  --color-moss-950: #0f1f0e;
+  --color-moss: #3c6c39;
+  --color-moss-deep: #1e351c;
+  --color-moss-mist: #d7e8d5;
+
+  /* Cream paper palette — warm children's picture book pages, sunlit parchment */
+  --color-cream-50: #fdfcf9;
+  --color-cream-100: #faf7ee;
+  --color-cream-200: #f4eee0;
+  --color-cream-300: #ebe0cb;
+  --color-cream-400: #dfceb1;
+  --color-cream-500: #cfb993;
+  --color-cream-600: #bda275;
+  --color-cream: #faf7ee;
+
+  /* Warm amber / orange / flame — fire signals, alerts, glowing embers */
+  --color-amber-50: #fffbeb;
+  --color-amber-100: #fef3c7;
+  --color-amber-200: #fde68a;
+  --color-amber-300: #fcd34d;
+  --color-amber-400: #fbbf24;
+  --color-amber-500: #f59e0b;
+  --color-amber-600: #d97706;
+  --color-amber-700: #b45309;
+  --color-amber-800: #92400e;
+  --color-amber-900: #78350f;
+  --color-amber-warm: #d97706;
+  --color-amber-glow: #f59e0b;
+  --color-flame: #ea580c;
+  --color-ember: #c2410c;
+
+  /* Charcoal / Ash / Burned — only for fire, scorch marks, and burned areas */
+  --color-charcoal-50: #f6f6f6;
+  --color-charcoal-100: #e8e8e8;
+  --color-charcoal-200: #d3d3d3;
+  --color-charcoal-300: #b4b4b4;
+  --color-charcoal-400: #8c8c8c;
+  --color-charcoal-500: #6b6b6b;
+  --color-charcoal-600: #555555;
+  --color-charcoal-700: #424242;
+  --color-charcoal-800: #262626;
+  --color-charcoal-900: #171717;
+  --color-charcoal-950: #0d0d0d;
+  --color-charcoal: #262626;
+  --color-ash: #4a4a4a;
+  --color-soot: #121212;
+
+  /* Storybook Paper Variants */
+  --color-paper-light: #fefdfa;
+  --color-paper-cream: #faf7ee;
+  --color-paper-warm: #f5efe2;
+  --color-paper-parchment: #ece3cf;
+  --color-paper-edge: #dfd4be;
+  --color-paper-charred: #242220;
+}
+
+/* ==========================================================================
+   Base Styles & Smooth Scrolling
+   ========================================================================== */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-paper-cream);
+  color: var(--color-charcoal-800);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   Paper Texture Background
+   ========================================================================== */
+.paper-texture {
+  background-color: var(--color-paper-cream);
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(255, 255, 255, 0.6) 0%, transparent 40%),
+    radial-gradient(circle at 85% 85%, rgba(207, 185, 147, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(245, 239, 226, 0.8) 0%, transparent 100%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paperNoise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paperNoise)' opacity='0.032'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+}
+
+/* Subtly aged card paper surface */
+.paper-card {
+  background-color: var(--color-paper-warm);
+  border: 1px solid var(--color-paper-edge);
+  box-shadow: 
+    0 2px 4px -1px rgba(60, 40, 20, 0.04),
+    0 6px 16px -2px rgba(60, 40, 20, 0.06);
+}
+
+.paper-card-deckle {
+  background-color: var(--color-paper-warm);
+  border: 1px solid var(--color-paper-edge);
+  box-shadow: 
+    0 3px 8px -1px rgba(60, 40, 20, 0.05),
+    0 12px 28px -4px rgba(60, 40, 20, 0.08);
+  position: relative;
+}
+
+/* Deckle edge paper border effect */
+.paper-deckle {
+  border-radius: 2px;
+  filter: drop-shadow(0 2px 6px rgba(45, 35, 20, 0.07));
+}
+
+/* ==========================================================================
+   Watercolor Bleed & Organic Edge Effects (Clip-path & SVG filters)
+   ========================================================================== */
+.watercolor-edge {
+  clip-path: polygon(
+    0% 0.5%, 3% 0.1%, 7% 0.8%, 12% 0.2%, 18% 0.7%, 24% 0.1%, 31% 0.6%, 38% 0.2%,
+    45% 0.8%, 52% 0.1%, 59% 0.6%, 66% 0.2%, 73% 0.7%, 81% 0.1%, 88% 0.7%, 94% 0.2%,
+    100% 0.5%,
+    99.8% 15%, 99.3% 32%, 99.9% 48%, 99.4% 65%, 99.8% 82%, 99.5% 100%,
+    94% 99.6%, 87% 99.2%, 80% 99.8%, 72% 99.3%, 64% 99.7%, 56% 99.1%, 48% 99.8%,
+    40% 99.2%, 32% 99.7%, 24% 99.1%, 16% 99.7%, 8% 99.2%, 0% 99.6%,
+    0.3% 85%, 0.7% 68%, 0.2% 51%, 0.8% 34%, 0.2% 17%
+  );
+}
+
+.watercolor-bleed {
+  filter: blur(0.4px) contrast(110%);
+  transition: filter 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s ease;
+}
+
+.watercolor-bleed:hover {
+  filter: blur(0px) contrast(100%);
+}
+
+/* Organic torn paper ribbon */
+.paper-torn-bottom {
+  clip-path: polygon(
+    0% 0%, 100% 0%, 100% 94%,
+    95% 97%, 90% 94%, 85% 96%, 80% 93%, 75% 96%, 70% 93%,
+    65% 96%, 60% 93%, 55% 96%, 50% 93%, 45% 96%, 40% 93%,
+    35% 96%, 30% 93%, 25% 96%, 20% 93%, 15% 96%, 10% 93%,
+    5% 96%, 0% 94%
+  );
+}
+
+.paper-torn-top {
+  clip-path: polygon(
+    0% 6%, 5% 4%, 10% 7%, 15% 4%, 20% 7%, 25% 4%, 30% 7%,
+    35% 4%, 40% 7%, 45% 4%, 50% 7%, 55% 4%, 60% 7%, 65% 4%,
+    70% 7%, 75% 4%, 80% 7%, 85% 4%, 90% 7%, 95% 4%, 100% 6%,
+    100% 100%, 0% 100%
+  );
+}
+
+/* ==========================================================================
+   Burn / Char Animation Keyframes
+   ========================================================================== */
+@keyframes burn-fade {
+  0% {
+    filter: saturate(100%) brightness(100%) sepia(0%);
+    opacity: 1;
+  }
+  40% {
+    filter: saturate(180%) brightness(85%) sepia(30%) hue-rotate(-20deg);
+  }
+  75% {
+    filter: saturate(60%) brightness(40%) sepia(80%) hue-rotate(-40deg);
+  }
+  100% {
+    filter: grayscale(90%) brightness(25%) sepia(40%);
+    opacity: 0.88;
+  }
+}
+
+@keyframes char-pulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(234, 88, 12, 0.25), inset 0 0 10px rgba(18, 18, 18, 0.7);
+    border-color: rgba(194, 65, 12, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(245, 158, 11, 0.45), inset 0 0 16px rgba(18, 18, 18, 0.85);
+    border-color: rgba(245, 158, 11, 0.85);
+  }
+}
+
+@keyframes ember-flicker {
+  0%, 100% {
+    opacity: 0.9;
+    transform: scale(1) translateY(0);
+  }
+  25% {
+    opacity: 0.5;
+    transform: scale(0.92) translateY(-2px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08) translateY(-4px);
+  }
+  75% {
+    opacity: 0.7;
+    transform: scale(0.96) translateY(-1px);
+  }
+}
+
+@keyframes smoke-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.85) rotate(0deg);
+  }
+  30% {
+    opacity: 0.35;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-40px) scale(1.3) rotate(8deg);
+  }
+}
+
+.animate-burn {
+  animation: burn-fade 2.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.animate-char-pulse {
+  animation: char-pulse 2.8s ease-in-out infinite;
+}
+
+.animate-ember {
+  animation: ember-flicker 1.8s ease-in-out infinite;
+}
+
+.animate-smoke {
+  animation: smoke-rise 3.2s ease-out infinite;
+}
+
+/* ==========================================================================
+   Color Return / Revive Animation Keyframes
+   ========================================================================== */
+@keyframes color-restore {
+  0% {
+    filter: grayscale(100%) brightness(35%) sepia(30%);
+    opacity: 0.6;
+    transform: scale(0.985);
+  }
+  50% {
+    filter: grayscale(40%) brightness(85%) sepia(10%);
+    opacity: 0.85;
+  }
+  100% {
+    filter: grayscale(0%) brightness(100%) sepia(0%);
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes watercolor-bloom {
+  0% {
+    opacity: 0;
+    transform: scale(0.94);
+    filter: blur(8px) saturate(60%);
+  }
+  60% {
+    opacity: 0.85;
+    transform: scale(1.02);
+    filter: blur(2px) saturate(130%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px) saturate(100%);
+  }
+}
+
+@keyframes revive-green {
+  0% {
+    background-color: var(--color-charcoal-900);
+    color: var(--color-charcoal-300);
+  }
+  100% {
+    background-color: var(--color-moss-700);
+    color: var(--color-cream-50);
+  }
+}
+
+.animate-color-restore {
+  animation: color-restore 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-bloom {
+  animation: watercolor-bloom 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-revive {
+  animation: revive-green 2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* ==========================================================================
+   Scroll-Driven Animation Utilities
+   ========================================================================== */
+@supports (animation-timeline: view()) {
+  .scroll-driven-fade {
+    animation: scroll-fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 15% cover 40%;
+  }
+
+  .scroll-driven-burn {
+    animation: burn-fade linear both;
+    animation-timeline: view();
+    animation-range: entry 25% exit 75%;
+  }
+
+  .scroll-driven-restore {
+    animation: color-restore linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+  }
+
+  @keyframes scroll-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Intersection observer / standard fallback reveal classes */
+.story-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.story-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   Custom Storybook Scrollbar Styling
+   ========================================================================== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-cream-500) var(--color-paper-warm);
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-paper-warm);
+  border-left: 1px solid var(--color-paper-edge);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-cream-400);
+  border-radius: 9999px;
+  border: 2px solid var(--color-paper-warm);
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-moss-500);
+}
+
+/* ==========================================================================
+   Accessibility & Reduced Motion Fallback
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-burn,
+  .animate-char-pulse,
+  .animate-ember,
+  .animate-smoke,
+  .animate-color-restore,
+  .animate-bloom,
+  .animate-revive,
+  .scroll-driven-fade,
+  .scroll-driven-burn,
+  .scroll-driven-restore {
+    animation: none !important;
+    transform: none !important;
+    filter: none !important;
+  }
+
+  .story-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* High contrast focus outline for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-moss-600);
+  outline-offset: 3px;
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+@media print {
+  /* Hide non-printable interactive elements */
+  nav,
+  header,
+  footer .social-links,
+  .sound-toggle-btn,
+  .mobile-menu-drawer,
+  .no-print,
+  button:not(.print-allow) {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #111111 !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
+  }
+
+  .paper-texture {
+    background: #ffffff !important;
+  }
+
+  .paper-card,
+  .paper-card-deckle {
+    box-shadow: none !important;
+    border: 1px solid #cccccc !important;
+    background: #ffffff !important;
+    break-inside: avoid;
+  }
+
+  /* Ensure links are identifiable in print */
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 85%;
+    color: #555555;
+  }
+}

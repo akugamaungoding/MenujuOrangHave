@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 160" width="100%" height="100%" preserveAspectRatio="none" role="img" aria-labelledby="burn-edge-title burn-edge-desc">
+  <title id="burn-edge-title">Charred Paper Burn Edge</title>
+  <desc id="burn-edge-desc">A decorative scorched paper border showing burning embers, charcoal edging, and singed paper transitions.</desc>
+  <defs>
+    <!-- Scorched edge distortion filter -->
+    <filter id="burn-rough-edge" x="-5%" y="-10%" width="110%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="4" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G" result="displaced" />
+      <feGaussianBlur in="displaced" stdDeviation="0.8" result="softened" />
+      <feMerge>
+        <feMergeNode in="softened" />
+        <feMergeNode in="SourceGraphic" opacity="0.85" />
+      </feMerge>
+    </filter>
+
+    <linearGradient id="grad-burn-vertical" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2C2C2C" />
+      <stop offset="45%" stop-color="#2C2C2C" />
+      <stop offset="68%" stop-color="#4A342B" />
+      <stop offset="85%" stop-color="#B25324" />
+      <stop offset="93%" stop-color="#E07B39" />
+      <stop offset="100%" stop-color="#F5E6C8" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Glowing Ember Gradient -->
+    <linearGradient id="grad-ember-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E07B39" />
+      <stop offset="25%" stop-color="#FFB366" />
+      <stop offset="50%" stop-color="#E07B39" />
+      <stop offset="75%" stop-color="#D4A574" />
+      <stop offset="100%" stop-color="#E07B39" />
+    </linearGradient>
+  </defs>
+
+  <!-- Charcoal body extending upwards -->
+  <rect x="0" y="0" width="1200" height="70" fill="#2C2C2C" />
+
+  <g id="burn-edge-group" filter="url(#burn-rough-edge)">
+    <!-- Deep scorched wash underlayer -->
+    <path id="scorch-underlayer" d="M0 60 Q120 95 240 75 T480 90 T720 70 T960 95 T1200 65 L1200 120 Q1080 135 960 115 T720 130 T480 110 T240 130 T0 115 Z" fill="#4A342B" opacity="0.85" />
+
+    <!-- Irregular charred paper main edge -->
+    <path id="charred-edge" d="M0 70 C80 95 140 115 220 98 C300 82 360 120 440 105 C520 90 600 128 690 102 C770 78 840 122 930 95 C1010 72 1100 115 1200 85 L1200 0 L0 0 Z" fill="#2C2C2C" />
+
+    <!-- Glowing ember singe line directly at the burn border -->
+    <path id="ember-line" d="M0 72 C80 97 140 117 220 100 C300 84 360 122 440 107 C520 92 600 130 690 104 C770 80 840 124 930 97 C1010 74 1100 117 1200 87" stroke="url(#grad-ember-line)" stroke-width="4.5" stroke-linecap="round" fill="none" opacity="0.95" />
+
+    <!-- Secondary warm amber heat fringe -->
+    <path id="heat-fringe" d="M0 76 C80 101 140 121 220 104 C300 88 360 126 440 111 C520 96 600 134 690 108 C770 84 840 128 930 101 C1010 78 1100 121 1200 91" stroke="#E8956A" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.75" />
+  </g>
+
+  <!-- Sparks & Glowing Embers escaping into the paper space -->
+  <g id="ash-particles">
+    <circle cx="95" cy="115" r="2.5" fill="#FFFDF7" />
+    <circle cx="95" cy="115" r="5" fill="#E07B39" opacity="0.5" />
+    <circle cx="210" cy="122" r="2" fill="#FFB366" />
+    <circle cx="340" cy="135" r="3" fill="#FFFDF7" />
+    <circle cx="340" cy="135" r="7" fill="#E07B39" opacity="0.6" />
+    <circle cx="480" cy="120" r="2.5" fill="#FFB366" />
+    <circle cx="585" cy="140" r="2" fill="#E07B39" />
+    <circle cx="670" cy="125" r="3" fill="#FFFDF7" />
+    <circle cx="670" cy="125" r="6" fill="#E07B39" opacity="0.5" />
+    <circle cx="820" cy="138" r="2.5" fill="#FFB366" />
+    <circle cx="950" cy="115" r="2" fill="#E07B39" />
+    <circle cx="1060" cy="130" r="3" fill="#FFFDF7" />
+    <circle cx="1060" cy="130" r="6" fill="#E07B39" opacity="0.55" />
+  </g>
+</svg>

@@ -1,0 +1,320 @@
+{
+  "meta": {
+    "title": "H.O.M.E. — The Disappearing Home",
+    "description": "When the forest burns, who loses their home? A storybook for Kalimantan's wildlife, and for the neighbors who breathe the smoke.",
+    "tagline": "When the forest burns, who loses their home?",
+    "expanded": "Habitat of Our Missing Endangered"
+  },
+  "nav": {
+    "home": "Home",
+    "map": "Map",
+    "wildlife": "Wildlife",
+    "reach": "Neighbors",
+    "action": "Take Action",
+    "dashboard": "Your Home",
+    "transparency": "Transparency",
+    "future": "Data for the Future",
+    "sponsor": "Partner with Us"
+  },
+  "story": {
+    "cover_title": "This is Tuki's home.",
+    "cover_subtitle": "A painted forest in Kalimantan, Borneo.",
+    "meet_title": "Meet who lives here.",
+    "meet_intro": "Every tree is a bed. Every river is a road. Every leaf is a story.",
+    "tuki_desc": "Tuki is a young Bornean orangutan. Each night Tuki builds a new nest from fresh leaves. Each morning Tuki watches the mist lift through the canopy. This is the only home Tuki knows.",
+    "liku_desc": "Liku is a Sunda pangolin. Liku walks the forest floor after dark, listening for termites under the roots. The scales are a shield. They are not a shelter from fire.",
+    "madu_desc": "Madu is a sun bear. Madu looks for bees in high branches and leaves claw marks on bark, like a diary.",
+    "kecil_desc": "Kecil is a lesser mouse deer, no bigger than a hare. Kecil steps through the undergrowth like a whisper.",
+    "rangkong_desc": "Rangkong is a helmeted hornbill. The call carries through the canopy at dawn. The same nest tree can matter for years.",
+    "fire_title": "Then the fire comes.",
+    "fire_text": "It starts as a glow on the horizon. The air thickens. The colors thin.",
+    "fire_text2": "Satellite sensors record thermal anomalies across Kalimantan. A bright point is a place where a home may be at risk. It is not proof that a forest has burned, and it is not proof that an animal died.",
+    "evidence_title": "The evidence stays in separate rows.",
+    "evidence_text": "These are satellite fire detections in the loaded snapshot. A detection is a thermal anomaly. It is not, by itself, a wildlife impact.",
+    "reach_title": "The smoke does not stop at the river.",
+    "reach_text": "West and Central Kalimantan share an airshed with Sarawak, Sabah, and Brunei. In the southwest monsoon, that smoke has also crossed the sea to Peninsular Malaysia and Singapore. Schools have closed. Flights have waited. People have struggled to breathe. The fire is local. The harm can be national, next door.",
+    "choice_title": "You still have a choice.",
+    "choice_text": "The forest cannot wait. It does not have to disappear.",
+    "return_title": "Color comes back.",
+    "return_text": "When someone acts, the ending can change. The paint is still wet. This home can still be helped.",
+    "proof_title": "The proof stays visible.",
+    "proof_text": "Every dataset on this site names its source. Every claim keeps its evidence level."
+  },
+  "characters": {
+    "orangutan": {
+      "name": "Tuki",
+      "species": "Bornean Orangutan",
+      "scientific": "Pongo pygmaeus",
+      "scientificName": "Pongo pygmaeus",
+      "status": "CR",
+      "description": "A curious young orangutan who watches the peat swamp canopy and holds a broad leaf when the wind changes."
+    },
+    "pangolin": {
+      "name": "Liku",
+      "species": "Sunda Pangolin",
+      "scientific": "Manis javanica",
+      "scientificName": "Manis javanica",
+      "status": "CR",
+      "description": "A gentle wanderer with overlapping scales who curls tight at the first scent of distant smoke."
+    },
+    "sunbear": {
+      "name": "Madu",
+      "species": "Sun Bear",
+      "scientific": "Helarctos malayanus",
+      "scientificName": "Helarctos malayanus",
+      "status": "VU",
+      "description": "The smallest bear, with a pale chest crescent, searching decayed logs for insects and honey."
+    },
+    "mousedeer": {
+      "name": "Kecil",
+      "species": "Lesser Mouse Deer",
+      "scientific": "Tragulus kanchil",
+      "scientificName": "Tragulus kanchil",
+      "status": "LC",
+      "description": "A small forest-floor animal with careful steps and wide night eyes."
+    },
+    "hornbill": {
+      "name": "Rangkong",
+      "species": "Helmeted Hornbill",
+      "scientific": "Rhinoplax vigil",
+      "scientificName": "Rhinoplax vigil",
+      "status": "CR",
+      "description": "A canopy bird whose call carries at dawn, and whose fruit diet helps the forest replant itself."
+    }
+  },
+  "actions": {
+    "rescue": {
+      "title": "Rescue",
+      "desc": "Support the teams who help wildlife when fire cuts a habitat in two."
+    },
+    "protect": {
+      "title": "Protect",
+      "desc": "Help protect the next hectare of habitat that is still standing."
+    },
+    "watch": {
+      "title": "Watch",
+      "desc": "Watch a forest area with the satellite record, and keep the method visible."
+    },
+    "restore": {
+      "title": "Restore",
+      "desc": "Support partners who replant burned forest corridors."
+    }
+  },
+  "partners": {
+    "iar_yiari": {
+      "name": "International Animal Rescue / YIARI",
+      "cta": "Rescue an orangutan cut off by fire."
+    },
+    "bos_foundation": {
+      "name": "BOS Foundation",
+      "cta": "Support rescued orangutans in Borneo."
+    },
+    "nasa_firms": {
+      "name": "NASA FIRMS",
+      "cta": "See the live fire data."
+    },
+    "mongabay": {
+      "name": "Mongabay",
+      "cta": "Read the field evidence."
+    },
+    "nasa_eo": {
+      "name": "NASA Earth Observatory",
+      "cta": "Read the field evidence."
+    },
+    "conservation_intl": {
+      "name": "Conservation International",
+      "cta": "Protect the next hectare of orangutan forest."
+    }
+  },
+  "map": {
+    "title": "Fire and Habitat Map",
+    "subtitle": "Kalimantan, Borneo",
+    "layers": {
+      "fire": "Active fire detections",
+      "burned": "Burned area",
+      "protected": "Protected areas",
+      "species": "Species context"
+    },
+    "filters": {
+      "time_24h": "Last 24 hours",
+      "time_3d": "Last 3 days",
+      "time_7d": "Last 7 days",
+      "region_west": "West Kalimantan",
+      "region_central": "Central Kalimantan",
+      "region_all": "All Kalimantan"
+    },
+    "click_info": {
+      "sensor": "Sensor",
+      "time": "Detection time",
+      "brightness": "Brightness",
+      "confidence": "Confidence",
+      "nearest_pa": "Nearest protected area",
+      "species_overlap": "Species range overlap"
+    }
+  },
+  "evidence_levels": {
+    "verified_rescue": {
+      "label": "Verified rescue record",
+      "desc": "A rescue written down by a partner. This site stores the link, not a copied case file."
+    },
+    "range_overlap": {
+      "label": "Species range overlap",
+      "desc": "Official distribution overlapping a fire signal. Not a sighting at that point."
+    },
+    "fire_detection": {
+      "label": "Satellite fire detection",
+      "desc": "A thermal anomaly. Not proof of burned forest."
+    },
+    "burned_area": {
+      "label": "Burned-area evidence",
+      "desc": "An area a satellite product mapped as burned."
+    },
+    "needs_verification": {
+      "label": "Needs field verification",
+      "desc": "A signal that still needs someone on the ground."
+    },
+    "modeled_exposure": {
+      "label": "Modeled habitat exposure",
+      "desc": "A Random Forest score: resemblance to the occurrence table, plus workbook NDVI change. Not a wildlife impact."
+    }
+  },
+  "dashboard": {
+    "title": "Your protected home",
+    "pick_prompt": "Choose a home to watch",
+    "status_safe": "Quiet in this snapshot — no recent fire signal in the chosen window",
+    "status_risk": "At risk in this method — a satellite fire signal falls near this home",
+    "status_recovering": "Recovering — a mapped burn is in the window, without a new detection"
+  },
+  "transparency": {
+    "title": "Data transparency",
+    "subtitle": "Every dataset has a source. Every source has a license.",
+    "glossary_title": "Glossary",
+    "what_we_dont_claim": "What we do not claim",
+    "claims": [
+      "We do not claim a fire detection proves an animal died.",
+      "We do not predict where an animal will move.",
+      "We do not treat a species range as presence at a coordinate.",
+      "We do not process donations. Giving is handled by the partner you choose.",
+      "We do not treat a protected area as a guarantee of safety.",
+      "We do not treat a model score, an NDVI drop, or a neighbor-country count as a health tally or a mortality tally."
+    ]
+  },
+  "future": {
+    "title": "Data for the Future",
+    "subtitle": "A habitat archive, clearly marked as planned",
+    "planned_label": "Planned",
+    "products": {
+      "habitat_risk": {
+        "title": "Habitat Risk Report",
+        "desc": "A monthly look at potential fire exposure along wildlife habitat."
+      },
+      "fire_api": {
+        "title": "Fire Exposure API",
+        "desc": "Programmatic access to fire detections joined with habitat context."
+      },
+      "restoration": {
+        "title": "Restoration Tracker",
+        "desc": "Follow greenness after fire with a vegetation index, without calling regrowth a finished rescue."
+      },
+      "corridor": {
+        "title": "Corridor Monitor",
+        "desc": "Watch whether habitat between protected areas is still connected."
+      },
+      "esg": {
+        "title": "ESG Dashboard",
+        "desc": "A planned view for partners who need fire exposure in plain language."
+      }
+    },
+    "cta": "Want to partner? Write to us."
+  },
+  "sponsor": {
+    "title": "Partner with Us",
+    "subtitle": "Sponsorship and a white-label map. Sponsors never edit the evidence.",
+    "corridor_title": "Adopt a Corridor",
+    "corridor_desc": "Sponsor monitoring for a habitat corridor between protected areas.",
+    "firewatch_title": "Sponsor a Fire Watch Zone",
+    "firewatch_desc": "Fund attention on a named forest zone's satellite fire record.",
+    "widget_title": "Embed the Map",
+    "widget_desc": "Place the H.O.M.E. fire and habitat map on your own site.",
+    "sponsor_label": "Sponsored",
+    "media_kit": "Media kit",
+    "inquire": "Send an inquiry"
+  },
+  "reach": {
+    "kicker": "Habitat of Our Missing Endangered",
+    "title": "The smoke keeps the address.",
+    "lede": "A fire in Kalimantan can become a week of closed windows in another country.",
+    "body": "H.O.M.E. is the habitat of our missing endangered. The story starts with Tuki's trees. It does not end at the border. Malaysia, Brunei, and Singapore share the air. On the same island, Sarawak, Sabah, and Brunei can live with smoke from a peat fire that started in Kalimantan. Across the sea, the southwest monsoon has carried that smoke to Peninsular Malaysia and Singapore. In severe seasons, schools have closed, flights have waited, and people have struggled to breathe. That reach can be massive. This page does not turn it into a death count.",
+    "neighbors_title": "Neighboring countries",
+    "neighbors_body": "Counts below are detections in this snapshot that sit in West and Central Kalimantan, or south of 1°N. They mark a shared airshed and a known seasonal pathway. They are not a smoke forecast, and they are not a count of illness.",
+    "sdg_title": "Sustainable Development Goals",
+    "sdg_body": "Six goals meet in one fire season. Tiles use the official numbers and colors. The drawings are original, so they are not the United Nations icon set.",
+    "models_title": "What the models read",
+    "models_body": "Python runs offline over every snapshot: fires, burned area, occurrences, protected areas, species, and the NDVI workbook. The browser only shows the JSON. Nothing here predicts where an animal will walk, or whether one died.",
+    "pathway_count": "Snapshot detections on the monsoon pathway",
+    "airshed_count": "Snapshot detections in the shared Borneo airshed"
+  },
+  "common": {
+    "disclaimer": "H.O.M.E. does not process donations. Donations are handled by the selected conservation partner.",
+    "donation_disclaimer": "H.O.M.E. does not process donations. Donations are handled by the selected conservation partner.",
+    "characterNotice": "Illustrated characters, inspired by real species.",
+    "illustrated_label": "Illustrated characters, inspired by real species.",
+    "last_updated": "Last updated",
+    "refresh": "Refresh data",
+    "download_data": "Download JSON",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "read_more": "Read more",
+    "learn_more": "Learn more",
+    "help_rescue": "Help Rescue Them",
+    "explore_map": "Explore the Map",
+    "see_fire_data": "See Live Fire Data",
+    "source": "Source",
+    "attribution": "Attribution",
+    "back_to_top": "Back to top",
+    "language": "Language"
+  },
+  "iucn": {
+    "CR": {
+      "short": "CR",
+      "label": "Critically Endangered",
+      "description": "Facing an extremely high risk of extinction in the wild."
+    },
+    "EN": {
+      "short": "EN",
+      "label": "Endangered",
+      "description": "Facing a very high risk of extinction in the wild."
+    },
+    "VU": {
+      "short": "VU",
+      "label": "Vulnerable",
+      "description": "Facing a high risk of extinction in the wild."
+    },
+    "LC": {
+      "short": "LC",
+      "label": "Least Concern",
+      "description": "Currently evaluated at lower risk of extinction."
+    }
+  },
+  "partnerCTA": {
+    "defaultLabel": "Direct Support Partner",
+    "directContribution": "Opening the partner site",
+    "disclaimer": "H.O.M.E. does not process donations. Donations are handled by the selected conservation partner."
+  },
+  "statusBadge": {
+    "statuses": {
+      "OK": "Fresh",
+      "STALE": "Using snapshot",
+      "FAILED": "Failed",
+      "BLOCKED_BY_CORS": "Blocked by CORS",
+      "NEEDS_KEY": "Needs a key"
+    },
+    "lastUpdated": "Updated"
+  },
+  "soundToggle": {
+    "label": "Toggle forest ambience",
+    "soundOn": "Forest ambience playing",
+    "soundOff": "Forest ambience muted",
+    "unavailable": "Ambient sound unavailable"
+  }
+}

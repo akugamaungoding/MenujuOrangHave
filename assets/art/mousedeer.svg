@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%" role="img" aria-labelledby="mousedeer-title mousedeer-desc">
+  <!-- Illustrated character, inspired by real species -->
+  <title id="mousedeer-title">Kecil the Mouse Deer</title>
+  <desc id="mousedeer-desc">A gentle watercolor illustration of a small, delicate mouse deer with slender legs and big dark alert eyes.</desc>
+  <defs>
+    <!-- Soft watercolor bleed filter -->
+    <filter id="wc-filter-mousedeer" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox">
+      <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" result="displaced" />
+      <feGaussianBlur in="displaced" stdDeviation="0.5" result="softened" />
+      <feMerge>
+        <feMergeNode in="softened" />
+        <feMergeNode in="SourceGraphic" opacity="0.75" />
+      </feMerge>
+    </filter>
+
+    <radialGradient id="grad-deer-coat" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#E8956A" />
+      <stop offset="65%" stop-color="#C87034" />
+      <stop offset="100%" stop-color="#9C4C1B" />
+    </radialGradient>
+
+    <linearGradient id="grad-deer-belly" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF7" />
+      <stop offset="100%" stop-color="#F5E6C8" />
+    </linearGradient>
+
+    <radialGradient id="grad-deer-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FDF6E3" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#FDF6E3" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background Glow -->
+  <circle id="bg-glow" cx="150" cy="150" r="130" fill="url(#grad-deer-glow)" />
+
+  <g id="kecil" filter="url(#wc-filter-mousedeer)">
+    <!-- Slender Back Legs -->
+    <g id="kecil-back-legs">
+      <path d="M195 180 C210 195 210 225 205 260" stroke="#9C4C1B" stroke-width="4.5" stroke-linecap="round" fill="none" />
+      <path d="M205 258 L207 265 L202 265 Z" fill="#2C2C2C" /> <!-- Tiny delicate hoof -->
+      <path d="M180 185 C190 205 190 230 188 262" stroke="#9C4C1B" stroke-width="4" stroke-linecap="round" fill="none" />
+      <path d="M188 260 L190 266 L185 266 Z" fill="#2C2C2C" />
+    </g>
+
+    <!-- Compact Round Body -->
+    <ellipse id="kecil-body" cx="155" cy="175" rx="55" ry="42" fill="url(#grad-deer-coat)" />
+
+    <!-- Delicate Slender Front Legs -->
+    <g id="kecil-front-legs">
+      <path d="M125 190 C125 210 120 235 116 262" stroke="#9C4C1B" stroke-width="4" stroke-linecap="round" fill="none" />
+      <path d="M116 260 L118 266 L113 266 Z" fill="#2C2C2C" />
+      <path d="M140 190 C140 215 137 238 135 260" stroke="#9C4C1B" stroke-width="4" stroke-linecap="round" fill="none" />
+      <path d="M135 258 L137 265 L132 265 Z" fill="#2C2C2C" />
+    </g>
+
+    <!-- White Underbelly & Rump Patch -->
+    <path id="kecil-belly" d="M130 195 C145 208 175 206 195 188 C185 195 155 196 130 195 Z" fill="url(#grad-deer-belly)" />
+    <!-- Little tail -->
+    <path id="kecil-tail" d="M208 165 Q218 168 212 178 Q205 174 208 165 Z" fill="#FFFDF7" stroke="#C87034" stroke-width="1.5" />
+
+    <!-- Delicate Slender Neck -->
+    <path id="kecil-neck" d="M115 168 C110 145 115 125 120 110 L140 115 C138 135 142 155 145 170 Z" fill="url(#grad-deer-coat)" />
+
+    <!-- Distinctive White Throat Markings (Chevrotain Chevrons) -->
+    <g id="kecil-throat-stripes">
+      <path d="M118 122 L127 132 L134 124" stroke="#FFFDF7" stroke-width="3" stroke-linecap="round" fill="none" />
+      <path d="M119 136 L128 147 L137 138" stroke="#FFFDF7" stroke-width="3.5" stroke-linecap="round" fill="none" />
+      <path d="M122 152 L130 162 L140 154" stroke="#FFFDF7" stroke-width="3" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- Alert Leaf-Like Ears -->
+    <g id="kecil-ears">
+      <!-- Left Ear -->
+      <path d="M96 90 C85 68 95 50 108 62 C112 72 108 85 96 90 Z" fill="#C87034" />
+      <path d="M99 84 C93 72 98 62 105 68 C107 74 105 82 99 84 Z" fill="#F5E6C8" opacity="0.8" />
+      <!-- Right Ear -->
+      <path d="M136 85 C142 62 156 50 160 70 C158 80 148 90 136 85 Z" fill="#C87034" />
+      <path d="M140 82 C145 68 153 62 154 74 C152 80 146 84 140 82 Z" fill="#F5E6C8" opacity="0.8" />
+    </g>
+
+    <!-- Head & Delicate Tapered Snout -->
+    <path id="kecil-head" d="M128 92 C140 100 135 120 115 125 C92 125 76 112 78 102 C82 90 110 82 128 92 Z" fill="url(#grad-deer-coat)" />
+
+    <!-- Big Dewy Nocturnal Eye -->
+    <g id="kecil-eyes">
+      <ellipse cx="102" cy="100" rx="10.5" ry="11" fill="#1A1817" />
+      <!-- Starry/dewy white reflections -->
+      <circle cx="99" cy="97" r="3.8" fill="#FFFDF7" />
+      <circle cx="104" cy="103" r="1.8" fill="#FFFDF7" />
+      <circle cx="106" cy="98" r="1" fill="#FFFDF7" />
+      <!-- Warm rim -->
+      <path d="M94 105 Q102 112 110 106" stroke="#D4A574" stroke-width="1.3" fill="none" opacity="0.65" />
+      <!-- Gentle eyebrow -->
+      <path d="M94 88 Q102 85 110 89" stroke="#9C4C1B" stroke-width="2" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- Delicate Tiny Black Nose & Whiskers -->
+    <g id="kecil-snout">
+      <ellipse cx="76" cy="106" rx="3.5" ry="3" fill="#1F1F1F" />
+      <path d="M76 109 Q79 113 83 111" stroke="#8A3D18" stroke-width="1.5" stroke-linecap="round" fill="none" />
+      <!-- Tiny delicate whiskers -->
+      <path d="M74 108 Q62 106 54 104" stroke="#FFFDF7" stroke-width="0.8" opacity="0.75" />
+      <path d="M74 110 Q62 112 55 116" stroke="#FFFDF7" stroke-width="0.8" opacity="0.75" />
+    </g>
+
+    <!-- Soft blush under eye -->
+    <circle cx="108" cy="112" r="6" fill="#E8956A" opacity="0.45" />
+
+    <!-- Forest Grass Tuft at feet -->
+    <g id="forest-ground" opacity="0.7">
+      <path d="M105 264 Q112 250 118 264" stroke="#4A7C59" stroke-width="2" stroke-linecap="round" fill="none" />
+      <path d="M195 265 Q200 252 208 264" stroke="#6B8F5E" stroke-width="2" stroke-linecap="round" fill="none" />
+      <ellipse cx="160" cy="265" rx="65" ry="4" fill="#6B8F5E" opacity="0.25" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%" role="img" aria-labelledby="pangolin-title pangolin-desc">
+  <!-- Illustrated character, inspired by real species -->
+  <title id="pangolin-title">Liku the Sunda Pangolin</title>
+  <desc id="pangolin-desc">A gentle watercolor illustration of a Sunda pangolin curled slightly with soft overlapping scales.</desc>
+  <defs>
+    <!-- Soft watercolor bleed filter -->
+    <filter id="wc-filter-pangolin" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox">
+      <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" result="displaced" />
+      <feGaussianBlur in="displaced" stdDeviation="0.5" result="softened" />
+      <feMerge>
+        <feMergeNode in="softened" />
+        <feMergeNode in="SourceGraphic" opacity="0.7" />
+      </feMerge>
+    </filter>
+
+    <radialGradient id="grad-pango-body" cx="45%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#F5E6C8" />
+      <stop offset="60%" stop-color="#D4A574" />
+      <stop offset="100%" stop-color="#B88450" />
+    </radialGradient>
+
+    <linearGradient id="grad-scale-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8B88A" />
+      <stop offset="70%" stop-color="#D4A574" />
+      <stop offset="100%" stop-color="#B37840" />
+    </linearGradient>
+
+    <linearGradient id="grad-scale-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A574" />
+      <stop offset="100%" stop-color="#9C6228" />
+    </linearGradient>
+
+    <radialGradient id="grad-pango-belly" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF7" />
+      <stop offset="100%" stop-color="#F5E6C8" />
+    </radialGradient>
+
+    <radialGradient id="grad-pango-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FDF6E3" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#FDF6E3" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background glow -->
+  <circle id="bg-glow" cx="150" cy="150" r="130" fill="url(#grad-pango-glow)" />
+
+  <g id="liku" filter="url(#wc-filter-pangolin)">
+    <!-- Curled body base -->
+    <path id="liku-curled-base" d="M110 230 C60 210 50 140 100 95 C150 50 230 70 245 130 C260 190 215 250 150 252 C125 252 105 242 95 230 Z" fill="url(#grad-pango-body)" />
+
+    <!-- Soft Underbelly -->
+    <path id="liku-underbelly" d="M135 150 C120 170 125 200 155 210 C185 220 195 190 190 170 C180 145 150 135 135 150 Z" fill="url(#grad-pango-belly)" opacity="0.9" />
+
+    <!-- Overlapping Scales Pattern - Curved Arcs in layers -->
+    <g id="liku-scales">
+      <!-- Outer Rim Scales Layer 1 -->
+      <path d="M125 80 C135 68 150 68 160 80 C150 92 135 92 125 80 Z" fill="url(#grad-scale-1)" />
+      <path d="M155 75 C170 65 185 68 195 82 C185 95 170 92 155 75 Z" fill="url(#grad-scale-2)" />
+      <path d="M190 80 C208 75 224 85 230 102 C215 112 202 100 190 80 Z" fill="url(#grad-scale-1)" />
+      <path d="M225 100 C242 110 252 128 248 148 C232 145 225 125 225 100 Z" fill="url(#grad-scale-2)" />
+      <path d="M242 145 C255 165 250 190 238 208 C225 195 225 170 242 145 Z" fill="url(#grad-scale-1)" />
+      <path d="M232 205 C222 225 205 240 185 245 C185 225 205 215 232 205 Z" fill="url(#grad-scale-2)" />
+
+      <!-- Mid-Body Scales Layer 2 -->
+      <path d="M105 105 C118 92 135 92 145 105 C135 118 118 118 105 105 Z" fill="url(#grad-scale-2)" />
+      <path d="M140 100 C155 88 175 90 185 105 C172 120 152 118 140 100 Z" fill="url(#grad-scale-1)" />
+      <path d="M180 102 C198 95 215 105 220 122 C205 135 190 122 180 102 Z" fill="url(#grad-scale-2)" />
+      <path d="M210 125 C225 138 230 158 222 175 C208 165 205 145 210 125 Z" fill="url(#grad-scale-1)" />
+      <path d="M208 172 C218 190 210 210 195 222 C185 205 190 185 208 172 Z" fill="url(#grad-scale-2)" />
+
+      <!-- Inner Scales Layer 3 -->
+      <path d="M92 135 C102 122 120 122 128 135 C120 148 102 148 92 135 Z" fill="url(#grad-scale-1)" />
+      <path d="M125 128 C140 115 160 118 168 132 C155 145 138 142 125 128 Z" fill="url(#grad-scale-2)" />
+      <path d="M165 128 C182 120 198 130 200 148 C185 158 172 148 165 128 Z" fill="url(#grad-scale-1)" />
+      <path d="M188 152 C200 168 198 188 185 200 C175 185 178 168 188 152 Z" fill="url(#grad-scale-2)" />
+
+      <!-- Tail Curling Inward -->
+      <path id="liku-tail" d="M155 248 C120 250 85 225 78 190 C72 155 90 135 95 140 C85 170 105 220 145 230 Z" fill="url(#grad-scale-2)" />
+      <path d="M80 185 C70 195 72 210 85 218 C90 205 88 192 80 185 Z" fill="url(#grad-scale-1)" />
+      <path d="M95 218 C108 230 125 238 145 238 C135 225 115 220 95 218 Z" fill="url(#grad-scale-1)" />
+    </g>
+
+    <!-- Front Little Paws tucked tenderly -->
+    <ellipse id="liku-paw-front" cx="132" cy="188" rx="8" ry="6" fill="#D4A574" />
+    <path d="M128 190 L126 195 M131 192 L130 197 M134 191 L134 196" stroke="#9C6228" stroke-width="1.2" stroke-linecap="round" />
+
+    <!-- Cute Head & Snout -->
+    <g id="liku-head" transform="rotate(-8 95 155)">
+      <path d="M110 140 C110 120 85 130 65 150 C55 158 55 168 68 170 C90 172 110 165 110 140 Z" fill="url(#grad-pango-body)" />
+      <ellipse cx="60" cy="160" rx="4" ry="3" fill="#8C5320" /> <!-- Nose tip -->
+
+      <!-- Head scales -->
+      <path d="M90 135 C98 128 106 130 108 138 C100 142 94 140 90 135 Z" fill="url(#grad-scale-1)" opacity="0.8" />
+      <path d="M80 145 C86 138 94 140 96 148 C88 152 82 150 80 145 Z" fill="url(#grad-scale-2)" opacity="0.8" />
+
+      <!-- Gentle Curious Eye -->
+      <g id="liku-eye">
+        <circle cx="82" cy="150" r="7" fill="#2C2C2C" />
+        <circle cx="80.5" cy="148" r="2.8" fill="#FFFDF7" />
+        <circle cx="84" cy="152" r="1.2" fill="#FFFDF7" />
+        <path d="M77 142 Q82 139 88 143" stroke="#9C6228" stroke-width="2" stroke-linecap="round" fill="none" />
+      </g>
+
+      <!-- Soft gentle mouth curve -->
+      <path d="M64 165 Q70 168 76 164" stroke="#8C5320" stroke-width="1.5" stroke-linecap="round" fill="none" />
+      <!-- Sweet cheek blush -->
+      <circle cx="88" cy="158" r="6" fill="#E8956A" opacity="0.4" />
+    </g>
+  </g>
+</svg>

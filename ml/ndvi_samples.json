@@ -1,0 +1,116 @@
+{
+  "provenance": "worked_example",
+  "note": "Monthly NDVI means typed in as a workbook so the offline pipeline can run. They are not a NASA or MODIS download. Replace this file with statistics you extract yourself; the script only subtracts the two windows you give it.",
+  "plots": [
+    {
+      "id": "ndvi-pulang-pisau",
+      "location_name": "Pulang Pisau Peatland Complex",
+      "lat": -2.75,
+      "lon": 114.28,
+      "sensor_label": "workbook stand-in for a 250 m greenness mean",
+      "before_window": "2023-06",
+      "after_window": "2023-10",
+      "ndvi_before": 0.74,
+      "ndvi_after": 0.31
+    },
+    {
+      "id": "ndvi-kotawaringin",
+      "location_name": "Kotawaringin Timur Lowland Peat",
+      "lat": -2.55,
+      "lon": 112.95,
+      "sensor_label": "workbook stand-in for a 250 m greenness mean",
+      "before_window": "2023-06",
+      "after_window": "2023-10",
+      "ndvi_before": 0.71,
+      "ndvi_after": 0.36
+    },
+    {
+      "id": "ndvi-ketapang",
+      "location_name": "Ketapang South Coastal Peat Swamp",
+      "lat": -2.4,
+      "lon": 110.2,
+      "sensor_label": "workbook stand-in for a 250 m greenness mean",
+      "before_window": "2023-06",
+      "after_window": "2023-10",
+      "ndvi_before": 0.69,
+      "ndvi_after": 0.42
+    },
+    {
+      "id": "ndvi-sebangau",
+      "location_name": "Sebangau Basin Eastern Peat Corridor",
+      "lat": -2.55,
+      "lon": 113.6,
+      "sensor_label": "workbook stand-in for a 250 m greenness mean",
+      "before_window": "2023-06",
+      "after_window": "2023-10",
+      "ndvi_before": 0.78,
+      "ndvi_after": 0.55
+    },
+    {
+      "id": "ndvi-banjarbaru",
+      "location_name": "Banjarbaru Peat Scrubland",
+      "lat": -3.45,
+      "lon": 114.75,
+      "sensor_label": "workbook stand-in for a 250 m greenness mean",
+      "before_window": "2023-06",
+      "after_window": "2023-10",
+      "ndvi_before": 0.52,
+      "ndvi_after": 0.33
+    },
+    {
+      "id": "ndvi-mempawah",
+      "location_name": "Mempawah - Kubu Raya Border Peat",
+      "lat": 0.15,
+      "lon": 109.2,
+      "sensor_label": "workbook stand-in for a 250 m greenness mean",
+      "before_window": "2023-06",
+      "after_window": "2023-10",
+      "ndvi_before": 0.66,
+      "ndvi_after": 0.48
+    },
+    {
+      "id": "ndvi-katingan",
+      "location_name": "Katingan Peat Dome Outskirts",
+      "lat": -2.3,
+      "lon": 113.2,
+      "sensor_label": "workbook stand-in for a 250 m greenness mean",
+      "before_window": "2023-06",
+      "after_window": "2023-10",
+      "ndvi_before": 0.76,
+      "ndvi_after": 0.58
+    },
+    {
+      "id": "ndvi-samboja",
+      "location_name": "Samboja Peat Margin & Grasslands",
+      "lat": -1.05,
+      "lon": 116.95,
+      "sensor_label": "workbook stand-in for a 250 m greenness mean",
+      "before_window": "2023-06",
+      "after_window": "2023-10",
+      "ndvi_before": 0.58,
+      "ndvi_after": 0.41
+    },
+    {
+      "id": "ndvi-kapuas",
+      "location_name": "Kapuas Delta Wetland Margins",
+      "lat": -3.15,
+      "lon": 114.4,
+      "sensor_label": "workbook stand-in for a 250 m greenness mean",
+      "before_window": "2023-06",
+      "after_window": "2023-10",
+      "ndvi_before": 0.63,
+      "ndvi_after": 0.47
+    },
+    {
+      "id": "ndvi-berau",
+      "location_name": "Berau Lowland Secondary Shrubland",
+      "lat": 1.85,
+      "lon": 117.4,
+      "sensor_label": "workbook stand-in for a 250 m greenness mean",
+      "before_window": "2023-06",
+      "after_window": "2023-10",
+      "ndvi_before": 0.61,
+      "ndvi_after": 0.57
+    }
+  ]
+}

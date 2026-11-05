@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%" role="img" aria-labelledby="sunbear-title sunbear-desc">
+  <!-- Illustrated character, inspired by real species -->
+  <title id="sunbear-title">Madu the Sun Bear</title>
+  <desc id="sunbear-desc">A gentle watercolor illustration of a round, teddy-bear-like Sun bear with a warm golden chest patch and gentle smile.</desc>
+  <defs>
+    <!-- Soft watercolor bleed filter -->
+    <filter id="wc-filter-sunbear" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" result="displaced" />
+      <feGaussianBlur in="displaced" stdDeviation="0.6" result="softened" />
+      <feMerge>
+        <feMergeNode in="softened" />
+        <feMergeNode in="SourceGraphic" opacity="0.75" />
+      </feMerge>
+    </filter>
+
+    <radialGradient id="grad-bear-body" cx="45%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#4E3E37" />
+      <stop offset="70%" stop-color="#3A2D27" />
+      <stop offset="100%" stop-color="#281E19" />
+    </radialGradient>
+
+    <radialGradient id="grad-bear-muzzle" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#F5E6C8" />
+      <stop offset="70%" stop-color="#E8C896" />
+      <stop offset="100%" stop-color="#D4A574" />
+    </radialGradient>
+
+    <!-- Iconic Golden Sun/Crescent Patch -->
+    <radialGradient id="grad-sun-patch" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFFDF7" />
+      <stop offset="35%" stop-color="#F5E6C8" />
+      <stop offset="75%" stop-color="#E8956A" />
+      <stop offset="100%" stop-color="#D4733F" />
+    </radialGradient>
+
+    <radialGradient id="grad-sunbear-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FDF6E3" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#FDF6E3" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background Glow -->
+  <circle id="bg-glow" cx="150" cy="150" r="130" fill="url(#grad-sunbear-glow)" />
+
+  <g id="madu" filter="url(#wc-filter-sunbear)">
+    <!-- Round teddy bear body -->
+    <ellipse id="madu-body" cx="150" cy="210" rx="72" ry="62" fill="url(#grad-bear-body)" />
+
+    <!-- Big Round Bear Ears -->
+    <circle id="madu-ear-left" cx="95" cy="88" r="22" fill="#3A2D27" />
+    <circle id="madu-ear-inner-left" cx="98" cy="90" r="12" fill="#D4A574" opacity="0.6" />
+    <circle id="madu-ear-right" cx="205" cy="88" r="22" fill="#3A2D27" />
+    <circle id="madu-ear-inner-right" cx="202" cy="90" r="12" fill="#D4A574" opacity="0.6" />
+
+    <!-- Cute Bear Head -->
+    <circle id="madu-head" cx="150" cy="122" r="56" fill="url(#grad-bear-body)" />
+
+    <!-- Paws/Feet resting in front -->
+    <!-- Left Paw -->
+    <ellipse id="madu-foot-left" cx="102" cy="256" rx="26" ry="17" fill="#3A2D27" />
+    <circle cx="92" cy="252" r="4.5" fill="#D4A574" opacity="0.5" />
+    <circle cx="102" cy="249" r="4.5" fill="#D4A574" opacity="0.5" />
+    <circle cx="112" cy="252" r="4.5" fill="#D4A574" opacity="0.5" />
+    <ellipse cx="102" cy="260" rx="9" ry="6" fill="#D4A574" opacity="0.5" />
+
+    <!-- Right Paw -->
+    <ellipse id="madu-foot-right" cx="198" cy="256" rx="26" ry="17" fill="#3A2D27" />
+    <circle cx="188" cy="252" r="4.5" fill="#D4A574" opacity="0.5" />
+    <circle cx="198" cy="249" r="4.5" fill="#D4A574" opacity="0.5" />
+    <circle cx="208" cy="252" r="4.5" fill="#D4A574" opacity="0.5" />
+    <ellipse cx="198" cy="260" rx="9" ry="6" fill="#D4A574" opacity="0.5" />
+
+    <!-- Distinctive Golden U-Shaped Chest Patch -->
+    <path id="madu-chest-patch" d="M124 182 C120 225 180 225 176 182 C168 198 132 198 124 182 Z" fill="url(#grad-sun-patch)" />
+    <!-- Watercolor speckles inside chest patch -->
+    <circle cx="140" cy="205" r="3.5" fill="#E8956A" opacity="0.6" />
+    <circle cx="158" cy="207" r="3" fill="#E8956A" opacity="0.6" />
+    <circle cx="150" cy="214" r="2.5" fill="#E8956A" opacity="0.6" />
+
+    <!-- Cute Front Arms/Hands tucked neatly -->
+    <ellipse id="madu-hand-left" cx="108" cy="195" rx="14" ry="12" fill="#3A2D27" />
+    <ellipse id="madu-hand-right" cx="192" cy="195" rx="14" ry="12" fill="#3A2D27" />
+
+    <!-- Soft Cream/Warm Tan Muzzle -->
+    <ellipse id="madu-muzzle" cx="150" cy="138" rx="32" ry="24" fill="url(#grad-bear-muzzle)" />
+
+    <!-- Big Curious Eyes with warm twinkle -->
+    <g id="madu-eyes">
+      <!-- Left Eye -->
+      <circle cx="132" cy="115" r="9" fill="#1F1F1F" />
+      <circle cx="130" cy="113" r="3.2" fill="#FFFDF7" />
+      <circle cx="134" cy="117" r="1.4" fill="#FFFDF7" />
+      <path d="M124 105 Q131 101 138 104" stroke="#4E3E37" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+      <!-- Right Eye -->
+      <circle cx="168" cy="115" r="9" fill="#1F1F1F" />
+      <circle cx="166" cy="113" r="3.2" fill="#FFFDF7" />
+      <circle cx="170" cy="117" r="1.4" fill="#FFFDF7" />
+      <path d="M176 105 Q169 101 162 104" stroke="#4E3E37" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- Cute Rounded Nose & Gentle Warm Smile -->
+    <g id="madu-snout">
+      <ellipse cx="150" cy="132" rx="7.5" ry="5.5" fill="#281E19" />
+      <circle cx="148" cy="130.5" r="1.5" fill="#FFFDF7" opacity="0.8" />
+      <path d="M150 137 L150 143" stroke="#281E19" stroke-width="2" stroke-linecap="round" />
+      <path d="M141 143 Q150 151 159 143" stroke="#281E19" stroke-width="2.2" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- Warm Cheek Blush -->
+    <circle id="madu-blush-left" cx="118" cy="134" r="7" fill="#E8956A" opacity="0.5" />
+    <circle id="madu-blush-right" cx="182" cy="134" r="7" fill="#E8956A" opacity="0.5" />
+  </g>
+</svg>

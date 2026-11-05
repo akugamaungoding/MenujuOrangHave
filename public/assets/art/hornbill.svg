@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%" role="img" aria-labelledby="hornbill-title hornbill-desc">
+  <!-- Illustrated character, inspired by real species -->
+  <title id="hornbill-title">Rangkong the Helmeted Hornbill</title>
+  <desc id="hornbill-desc">A gentle watercolor illustration of a Helmeted hornbill perched on a forest branch, with a colorful amber casque and curious expressive eye.</desc>
+  <defs>
+    <!-- Soft watercolor bleed filter -->
+    <filter id="wc-filter-hornbill" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" result="displaced" />
+      <feGaussianBlur in="displaced" stdDeviation="0.5" result="softened" />
+      <feMerge>
+        <feMergeNode in="softened" />
+        <feMergeNode in="SourceGraphic" opacity="0.75" />
+      </feMerge>
+    </filter>
+
+    <radialGradient id="grad-feathers" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#3D3B39" />
+      <stop offset="65%" stop-color="#282625" />
+      <stop offset="100%" stop-color="#181716" />
+    </radialGradient>
+
+    <!-- Beak & Casque Gradient (Crimson amber fading to ivory) -->
+    <linearGradient id="grad-casque" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#D9532A" />
+      <stop offset="45%" stop-color="#E07B39" />
+      <stop offset="85%" stop-color="#D4A574" />
+      <stop offset="100%" stop-color="#F5E6C8" />
+    </linearGradient>
+
+    <linearGradient id="grad-beak" x1="0%" y1="0%" x2="100%" y2="60%">
+      <stop offset="0%" stop-color="#D9532A" />
+      <stop offset="35%" stop-color="#E07B39" />
+      <stop offset="80%" stop-color="#F5E6C8" />
+      <stop offset="100%" stop-color="#FFFDF7" />
+    </linearGradient>
+
+    <linearGradient id="grad-wood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6E5034" />
+      <stop offset="50%" stop-color="#553C26" />
+      <stop offset="100%" stop-color="#3C2A1A" />
+    </linearGradient>
+
+    <radialGradient id="grad-hornbill-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FDF6E3" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#FDF6E3" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background Glow -->
+  <circle id="bg-glow" cx="150" cy="150" r="130" fill="url(#grad-hornbill-glow)" />
+
+  <g id="rangkong" filter="url(#wc-filter-hornbill)">
+    <!-- Perched Branch with Moss & Leaves -->
+    <g id="rangkong-branch">
+      <!-- Curved branch -->
+      <path d="M40 240 C90 220 180 230 270 205 L268 220 C180 245 90 235 40 255 Z" fill="url(#grad-wood)" />
+      <!-- Moss patches on branch -->
+      <path d="M120 226 C135 220 155 222 170 227 C155 231 135 230 120 226 Z" fill="#6B8F5E" />
+      <path d="M70 234 C85 230 100 232 110 236 C95 239 80 238 70 234 Z" fill="#4A7C59" />
+
+      <!-- Fresh green leaves on branch sprout -->
+      <g id="branch-leaves">
+        <path d="M75 238 C60 250 45 245 42 230 C55 225 70 230 75 238 Z" fill="#6B8F5E" />
+        <path d="M72 237 C70 260 85 270 95 262 C95 248 85 240 72 237 Z" fill="#4A7C59" />
+      </g>
+    </g>
+
+    <!-- Long graceful tail feathers -->
+    <g id="rangkong-tail">
+      <path d="M180 220 L215 285 L198 285 L168 220 Z" fill="#282625" />
+      <!-- Tail white feather tip with black band -->
+      <path d="M205 265 L215 285 L198 285 L192 272 Z" fill="#FFFDF7" />
+      <path d="M198 270 L208 276 L205 280 L195 274 Z" fill="#181716" />
+    </g>
+
+    <!-- Hornbill Feet Clinging to Branch -->
+    <g id="rangkong-feet">
+      <ellipse cx="148" cy="225" rx="6" ry="4" fill="#D4A574" />
+      <ellipse cx="158" cy="225" rx="6" ry="4" fill="#D4A574" />
+      <path d="M143 226 C143 232 147 232 147 226 M150 226 C150 232 154 232 154 226" stroke="#9C6228" stroke-width="1.5" />
+      <path d="M155 226 C155 232 159 232 159 226 M162 226 C162 232 166 232 166 226" stroke="#9C6228" stroke-width="1.5" />
+    </g>
+
+    <!-- Round Plump Body -->
+    <ellipse id="rangkong-body" cx="160" cy="175" rx="42" ry="52" transform="rotate(-15 160 175)" fill="url(#grad-feathers)" />
+
+    <!-- Folded Wing -->
+    <path id="rangkong-wing" d="M145 140 C175 140 195 165 192 205 C185 220 168 215 152 185 C142 165 140 150 145 140 Z" fill="#1E1C1B" stroke="#3D3B39" stroke-width="1.5" />
+    <!-- Wing feather layered accents -->
+    <path d="M160 160 C175 170 185 185 180 205" stroke="#4A7C59" stroke-width="1.5" opacity="0.4" fill="none" />
+
+    <!-- Pale throat & bare neck skin wash (soft turquoise/cream) -->
+    <ellipse id="rangkong-throat" cx="132" cy="125" rx="16" ry="18" fill="#F5E6C8" />
+    <ellipse cx="134" cy="126" rx="10" ry="12" fill="#E8956A" opacity="0.3" />
+
+    <!-- Head -->
+    <circle id="rangkong-head" cx="140" cy="100" r="28" fill="url(#grad-feathers)" />
+
+    <!-- Expressive Eye -->
+    <g id="rangkong-eye">
+      <!-- Bare eye patch rim (crimson/amber ring) -->
+      <circle cx="136" cy="98" r="11" fill="#E07B39" opacity="0.85" />
+      <circle cx="136" cy="98" r="8" fill="#1A1817" />
+      <!-- Gleaming highlights -->
+      <circle cx="134" cy="96" r="3" fill="#FFFDF7" />
+      <circle cx="138" cy="100" r="1.2" fill="#FFFDF7" />
+      <path d="M130 91 Q136 87 142 91" stroke="#D9532A" stroke-width="1.8" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- Massive Iconic Helmeted Casque -->
+    <path id="rangkong-casque" d="M125 76 C120 52 155 42 172 56 C178 62 168 76 142 80 C132 82 126 80 125 76 Z" fill="url(#grad-casque)" />
+    <!-- Casque front shield profile characteristic of Helmeted hornbill -->
+    <path d="M118 72 C115 62 125 50 142 46 C130 55 125 65 120 74 Z" fill="#D9532A" />
+
+    <!-- Powerful Curved Colorful Beak -->
+    <g id="rangkong-beak">
+      <!-- Upper Mandible -->
+      <path d="M125 88 C95 92 65 105 52 120 C75 116 105 110 128 102 Z" fill="url(#grad-beak)" />
+      <!-- Lower Mandible -->
+      <path d="M125 103 C102 110 75 118 58 122 C78 124 105 118 124 112 Z" fill="url(#grad-beak)" />
+      <!-- Beak separation line -->
+      <path d="M54 121 C78 117 105 110 126 102" stroke="#8A3D18" stroke-width="1.2" fill="none" />
+    </g>
+
+    <!-- Feather tufts at back of head -->
+    <path d="M165 92 Q176 96 168 104" stroke="#282625" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <path d="M163 100 Q174 106 165 112" stroke="#282625" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  </g>
+</svg>

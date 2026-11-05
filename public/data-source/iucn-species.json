@@ -1,0 +1,112 @@
+[
+  {
+    "id": "bornean-orangutan",
+    "slug": "bornean-orangutan",
+    "common_name": "Bornean Orangutan",
+    "scientific_name": "Pongo pygmaeus",
+    "red_list_status": "CR",
+    "red_list_category": "Critically Endangered",
+    "population_trend": "decreasing",
+    "threats": [
+      "habitat loss",
+      "fire",
+      "hunting",
+      "oil palm monoculture expansion",
+      "peatland drainage"
+    ],
+    "habitat": "Lowland dipterocarp forest, freshwater swamp, and tropical peat swamp forests below 500m elevation",
+    "description": "The Bornean orangutan is Asia's only great ape. Peatland fires destroy the high fruiting canopies they rely upon for food and shelter, forcing mother and infant pairs into fragmented forest patches where human-wildlife conflict increases.",
+    "story_role": "Canopy Wanderer & Tender Mother",
+    "avatar": "/assets/art/orangutan.svg",
+    "occurrences_count": 3120,
+    "last_assessed": "2024",
+    "source_id": "iucn-redlist"
+  },
+  {
+    "id": "sunda-pangolin",
+    "slug": "sunda-pangolin",
+    "common_name": "Sunda Pangolin",
+    "scientific_name": "Manis javanica",
+    "red_list_status": "CR",
+    "red_list_category": "Critically Endangered",
+    "population_trend": "decreasing",
+    "threats": [
+      "hunting",
+      "trade",
+      "habitat loss",
+      "understory smoldering peat fires"
+    ],
+    "habitat": "Primary and secondary rainforests, peat swamp forest margins, and mixed agricultural tree groves",
+    "description": "An elusive nocturnal mammal covered in protective keratin scales. When subsurface peat fires ignite root cavities, pangolins roll into tight defensive balls rather than fleeing, leaving them trapped by thick smoke and subterranean embers.",
+    "story_role": "Silent Guardian of the Forest Floor",
+    "avatar": "/assets/art/pangolin.svg",
+    "occurrences_count": 485,
+    "last_assessed": "2024",
+    "source_id": "iucn-redlist"
+  },
+  {
+    "id": "sun-bear",
+    "slug": "sun-bear",
+    "common_name": "Sun Bear",
+    "scientific_name": "Helarctos malayanus",
+    "red_list_status": "VU",
+    "red_list_category": "Vulnerable",
+    "population_trend": "decreasing",
+    "threats": [
+      "deforestation",
+      "hunting",
+      "habitat fragmentation",
+      "hollow tree nesting loss"
+    ],
+    "habitat": "Dense tropical evergreen lowland and hill forests, secondary forests",
+    "description": "The smallest bear species on Earth, recognizable by the radiant amber crescent on its chest. Sun bears rely on mature hardwood hollows for rearing cubs and tear open termite nests and wild bee hives; fires collapse their ancient nesting hollows.",
+    "story_role": "Patient Root Forager",
+    "avatar": "/assets/art/sun-bear.svg",
+    "occurrences_count": 890,
+    "last_assessed": "2024",
+    "source_id": "iucn-redlist"
+  },
+  {
+    "id": "mouse-deer",
+    "slug": "mouse-deer",
+    "common_name": "Lesser Mouse Deer",
+    "scientific_name": "Tragulus kanchil",
+    "red_list_status": "LC",
+    "red_list_category": "Least Concern",
+    "population_trend": "stable",
+    "threats": [
+      "habitat loss",
+      "understory brush fires",
+      "snare poaching"
+    ],
+    "habitat": "Dense riverside thickets, lowland dipterocarp understory, and swamp forest fringes",
+    "description": "A shy, nimble ungulate no larger than a rabbit. Folklore celebrates the mouse deer (Sang Kancil) as quick-witted and agile; yet pervasive regional haze and ground fires eliminate the dense low shrubs and fallen fruit essential for its survival.",
+    "story_role": "Swift Undergrowth Messenger",
+    "avatar": "/assets/art/mouse-deer.svg",
+    "occurrences_count": 2240,
+    "last_assessed": "2024",
+    "source_id": "iucn-redlist"
+  },
+  {
+    "id": "helmeted-hornbill",
+    "slug": "helmeted-hornbill",
+    "common_name": "Helmeted Hornbill",
+    "scientific_name": "Rhinoplax vigil",
+    "red_list_status": "CR",
+    "red_list_category": "Critically Endangered",
+    "population_trend": "decreasing",
+    "threats": [
+      "hunting",
+      "deforestation",
+      "loss of large emergent nesting trees",
+      "smoke inhalation during breeding season"
+    ],
+    "habitat": "Pristine lowland and hill evergreen rainforests with tall emergent trees",
+    "description": "One of the most striking canopy birds in Southeast Asia, known for its loud maniacal call and solid ivory-like casque. Females seal themselves into hollow tree trunks to brood; when peat fire smoke blankets the canopy, nesting families face severe respiratory risk.",
+    "story_role": "Canopy Sentinel & Songkeeper",
+    "avatar": "/assets/art/hornbill.svg",
+    "occurrences_count": 640,
+    "last_assessed": "2024",
+    "source_id": "iucn-redlist"
+  }
+]

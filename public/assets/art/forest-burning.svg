@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" role="img" aria-labelledby="forest-burning-title forest-burning-desc">
+  <title id="forest-burning-title">The Encroaching Flames - Forest in Peril</title>
+  <desc id="forest-burning-desc">A poignant watercolor illustration of the forest with encroaching amber fire, charcoal burn edges, and hazy smoke drifting across the canopies.</desc>
+  <defs>
+    <!-- Watercolor bleed & running filter -->
+    <filter id="wc-filter-burning" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="4" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G" result="displaced" />
+      <feGaussianBlur in="displaced" stdDeviation="1.2" result="softened" />
+      <feMerge>
+        <feMergeNode in="softened" />
+        <feMergeNode in="SourceGraphic" opacity="0.6" />
+      </feMerge>
+    </filter>
+
+    <!-- Smoke Blur Filter -->
+    <filter id="smoke-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" />
+    </filter>
+
+    <!-- Hazy Smoldering Sky Gradient -->
+    <linearGradient id="grad-burn-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4A342B" />
+      <stop offset="35%" stop-color="#7D482C" />
+      <stop offset="70%" stop-color="#C25A24" />
+      <stop offset="100%" stop-color="#E07B39" />
+    </linearGradient>
+
+    <!-- Flame Bleed Gradient -->
+    <linearGradient id="grad-fire-glow" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#E07B39" />
+      <stop offset="40%" stop-color="#E8956A" />
+      <stop offset="75%" stop-color="#D4A574" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#2C2C2C" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Scorched Canopy Gradient -->
+    <linearGradient id="grad-canopy-scorched" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#554438" />
+      <stop offset="50%" stop-color="#3D322B" />
+      <stop offset="100%" stop-color="#2C2C2C" />
+    </linearGradient>
+
+    <!-- Murky River Reflecting Orange Haze -->
+    <linearGradient id="grad-burn-river" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8C654D" />
+      <stop offset="50%" stop-color="#B87343" />
+      <stop offset="100%" stop-color="#5E4233" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ominous Amber & Smoke Sky Canvas -->
+  <rect id="sky-backdrop" width="800" height="500" fill="url(#grad-burn-sky)" />
+
+  <!-- Encroaching Glow from horizon -->
+  <circle cx="400" cy="220" r="280" fill="#E07B39" opacity="0.3" filter="url(#smoke-blur)" />
+  <circle cx="680" cy="260" r="220" fill="#E8956A" opacity="0.4" filter="url(#smoke-blur)" />
+
+  <g id="burning-landscape" filter="url(#wc-filter-burning)">
+    <!-- Distant Ridge veiled in orange smog -->
+    <path id="charred-ridge-1" d="M0 240 Q160 180 340 220 T700 190 Q760 205 800 220 L800 350 L0 350 Z" fill="#6E4E3D" opacity="0.85" />
+    <path id="charred-ridge-2" d="M0 230 Q200 270 420 215 T800 240 L800 380 L0 380 Z" fill="#523B2F" opacity="0.9" />
+
+    <!-- Distant Canopy silhouettes turning into charcoal shapes -->
+    <g id="distant-scorched-trees" fill="#3D3029">
+      <circle cx="60" cy="245" r="45" />
+      <circle cx="120" cy="240" r="50" />
+      <circle cx="180" cy="250" r="45" />
+      <circle cx="240" cy="235" r="55" />
+      <circle cx="310" cy="245" r="50" />
+      <circle cx="380" cy="230" r="60" />
+      <circle cx="450" cy="240" r="52" />
+      <circle cx="530" cy="235" r="55" />
+      <circle cx="610" cy="245" r="48" />
+      <circle cx="680" cy="230" r="56" />
+      <circle cx="750" cy="240" r="52" />
+      <rect x="0" y="245" width="800" height="100" />
+    </g>
+
+    <!-- River reflecting the copper & amber fire sky -->
+    <path id="burn-river" d="M480 260 C460 290 490 320 450 350 C410 380 340 395 310 430 C270 475 290 500 290 500 L440 500 C470 470 480 435 530 400 C580 360 550 310 540 270 Z" fill="url(#grad-burn-river)" />
+    <!-- Disturbed water reflections -->
+    <path d="M470 290 C478 305 460 325 440 345" stroke="#E8956A" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.6" />
+    <path d="M410 385 C370 405 345 435 330 470" stroke="#E07B39" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7" />
+
+    <!-- Midground Trees (Fading greens overtaken by charcoal and scorched earth) -->
+    <g id="midground-scorched">
+      <path d="M-20 380 C0 310 60 275 120 285 C180 295 220 335 250 395 C220 425 120 445 -20 425 Z" fill="#3A3029" />
+      <!-- Lingering tired green fighting through -->
+      <circle cx="70" cy="295" r="55" fill="#4A5243" opacity="0.7" />
+      <circle cx="150" cy="310" r="62" fill="#3D322B" />
+      <circle cx="210" cy="335" r="50" fill="#2C2C2C" />
+
+      <path d="M520 395 C560 305 640 275 720 290 C780 300 820 335 830 415 C750 435 630 425 520 395 Z" fill="#3A3029" />
+      <circle cx="590" cy="310" r="58" fill="#382E28" />
+      <circle cx="670" cy="295" r="65" fill="#2C2C2C" />
+      <circle cx="750" cy="315" r="60" fill="#4B3930" />
+    </g>
+
+    <!-- Foreground Grand Trees Silhouetted and Scorched -->
+    <g id="foreground-scorched-trees">
+      <!-- Left Giant Trunk charred -->
+      <path d="M-30 500 L35 340 C45 300 65 240 70 180 L105 180 C95 240 85 300 95 340 L130 500 Z" fill="#2C2C2C" />
+      <!-- Charred bark fissures glowing with faint heat -->
+      <path d="M55 350 Q62 330 58 310" stroke="#E07B39" stroke-width="1.8" opacity="0.65" fill="none" />
+      <path d="M80 430 Q85 400 82 380" stroke="#D4A574" stroke-width="1.5" opacity="0.5" fill="none" />
+
+      <!-- Left Heavy Canopy Shrouded -->
+      <g fill="url(#grad-canopy-scorched)">
+        <circle cx="60" cy="150" r="75" />
+        <circle cx="130" cy="120" r="80" />
+        <circle cx="190" cy="160" r="65" />
+        <circle cx="110" cy="190" r="70" />
+        <circle cx="40" cy="210" r="60" />
+      </g>
+
+      <!-- Right Foreground Canopy charred -->
+      <g fill="url(#grad-canopy-scorched)">
+        <circle cx="750" cy="140" r="85" />
+        <circle cx="680" cy="165" r="70" />
+        <circle cx="770" cy="220" r="75" />
+        <circle cx="640" cy="210" r="55" />
+      </g>
+      <path d="M770 500 L740 310 L780 300 L810 500 Z" fill="#2C2C2C" />
+
+      <!-- Ground banks with charcoal ash mounds -->
+      <ellipse cx="200" cy="495" rx="70" ry="25" fill="#2C2C2C" />
+      <ellipse cx="600" cy="490" rx="90" ry="30" fill="#2C2C2C" />
+      <ellipse cx="680" cy="485" rx="60" ry="25" fill="#3A3029" />
+    </g>
+
+    <!-- Encroaching Fire Elements (Watercolor-style licking tongues & embers, not violent) -->
+    <g id="encroaching-fire">
+      <!-- Right Border Fire Tongues (Warm Amber & Orange watercolor shapes) -->
+      <path d="M720 500 C750 440 710 400 750 360 C780 320 810 300 810 500 Z" fill="#E07B39" opacity="0.85" />
+      <path d="M750 500 C770 450 740 410 780 380 C800 350 820 340 820 500 Z" fill="#E8956A" opacity="0.9" />
+      <path d="M775 500 C790 460 770 430 800 400 C815 385 825 380 825 500 Z" fill="#FFFDF7" opacity="0.7" />
+
+      <!-- Left Bottom Encroaching Fire -->
+      <path d="M-10 500 C20 460 10 430 40 410 C60 395 70 420 50 450 C30 480 -10 500 -10 500 Z" fill="#E07B39" opacity="0.8" />
+      <path d="M-20 500 C0 475 -5 450 20 440 C35 435 40 455 25 480 Z" fill="#E8956A" opacity="0.9" />
+
+      <!-- Bleeding Charcoal Border Wash at Edges -->
+      <path d="M0 0 L800 0 L800 40 C700 80 500 30 350 70 C200 40 100 80 0 35 Z" fill="#2C2C2C" opacity="0.65" />
+      <path d="M0 460 C120 480 250 470 380 485 C550 470 700 480 800 460 L800 500 L0 500 Z" fill="#2C2C2C" opacity="0.75" />
+    </g>
+  </g>
+
+  <!-- Heavy Billowing Soft Smoke Drifts (Atmospheric watercolor washes) -->
+  <g id="smoke-drifts" filter="url(#smoke-blur)" opacity="0.55">
+    <ellipse cx="680" cy="200" rx="140" ry="85" fill="#E8956A" />
+    <ellipse cx="600" cy="150" rx="180" ry="95" fill="#7D482C" />
+    <ellipse cx="450" cy="120" rx="210" ry="110" fill="#4A342B" />
+    <ellipse cx="250" cy="100" rx="160" ry="80" fill="#3A2820" />
+    <ellipse cx="100" cy="120" rx="120" ry="70" fill="#2C2C2C" />
+  </g>
+
+  <!-- Rising Embers & Ash Particles (Gentle poignancy) -->
+  <g id="ember-particles">
+    <circle cx="710" cy="360" r="3" fill="#FFFDF7" />
+    <circle cx="710" cy="360" r="7" fill="#E07B39" opacity="0.6" />
+    <circle cx="660" cy="320" r="2.5" fill="#FFFDF7" />
+    <circle cx="660" cy="320" r="6" fill="#E8956A" opacity="0.55" />
+    <circle cx="620" cy="280" r="2" fill="#E07B39" />
+    <circle cx="580" cy="230" r="2.5" fill="#E8956A" opacity="0.8" />
+    <circle cx="510" cy="210" r="1.8" fill="#FFFDF7" opacity="0.8" />
+    <circle cx="440" cy="170" r="2" fill="#E07B39" opacity="0.7" />
+    <circle cx="360" cy="140" r="1.5" fill="#E8956A" opacity="0.6" />
+    <circle cx="280" cy="190" r="2" fill="#E07B39" opacity="0.5" />
+    <circle cx="180" cy="240" r="2.2" fill="#E8956A" opacity="0.6" />
+    <circle cx="80" cy="370" r="2.5" fill="#FFFDF7" />
+    <circle cx="80" cy="370" r="6" fill="#E07B39" opacity="0.5" />
+  </g>
+</svg>

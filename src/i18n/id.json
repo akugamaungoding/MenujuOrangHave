@@ -1,0 +1,254 @@
+{
+  "meta": {
+    "title": "H.O.M.E. — Rumah yang Perlahan Hilang",
+    "description": "Saat hutan terbakar, siapa yang kehilangan rumah? Cerita untuk satwa Kalimantan, dan untuk tetangga yang menghirup asapnya.",
+    "tagline": "Saat hutan terbakar, siapa yang kehilangan rumah?",
+    "expanded": "Habitat of Our Missing Endangered"
+  },
+  "nav": {
+    "home": "Beranda",
+    "map": "Jelajahi Peta",
+    "wildlife": "Satwa Liar",
+    "reach": "Negara Tetangga",
+    "action": "Ambil Tindakan",
+    "dashboard": "Rumah Terlindungi",
+    "transparency": "Transparansi",
+    "future": "Data Masa Depan",
+    "sponsor": "Bermitra dengan Kami"
+  },
+  "story": {
+    "cover_title": "Inilah rumah Tuki.",
+    "cover_subtitle": "Hutan lukisan di Kalimantan, Borneo.",
+    "meet_title": "Kenali penghuni di sini.",
+    "meet_intro": "Setiap pohon adalah peraduan. Setiap sungai adalah jalan. Setiap helai daun adalah cerita.",
+    "tuki_desc": "Tuki adalah orangutan Kalimantan muda. Setiap malam ia merajut sarang baru dari dedaunan segar. Setiap pagi ia menatap kabut yang naik di kanopi. Inilah satu-satunya rumah yang ia kenal.",
+    "liku_desc": "Liku adalah trenggiling Sunda. Ia menyusuri lantai hutan saat malam tiba, mendengarkan rayap di balik akar. Sisiknya adalah perisai, namun tak kuasa menahan kobaran api.",
+    "madu_desc": "Madu adalah beruang madu. Ia mencari sarang lebah di dahan tertinggi, meninggalkan jejak cakar pada kulit pohon layaknya catatan hariannya.",
+    "kecil_desc": "Kecil adalah kancil, berukuran tak lebih dari seekor kelinci. Ia melangkah di semak belukar bagai bisikan angin, hampir tak terlihat kecuali bagi hutan itu sendiri.",
+    "rangkong_desc": "Rangkong adalah burung enggang gading. Suaranya bergema menembus kanopi layaknya tawa. Ia bersarang di pohon yang sama selama tujuh tahun.",
+    "fire_title": "Lalu api pun datang.",
+    "fire_text": "Bermula dari pendar cahaya di ufuk cakrawala. Udara menebal pekat. Warna-warni perlahan memudar.",
+    "fire_text2": "Sensor satelit mendeteksi anomali termal di seantero Kalimantan. Setiap titik cahaya adalah tempat di mana kehidupan pernah bernaung.",
+    "evidence_title": "Buktinya nyata di depan mata.",
+    "evidence_text": "Ini sinyal panas dari satelit pada cuplikan data. Deteksi bukan bukti hutan sudah terbakar, dan bukan bukti satwa mati.",
+    "reach_title": "Asap tidak berhenti di sungai.",
+    "reach_text": "Kalimantan Barat dan Tengah berbagi udara dengan Sarawak, Sabah, dan Brunei. Pada monsun barat daya, asap itu juga pernah menyeberang laut ke Semenanjung Malaysia dan Singapura. Sekolah pernah ditutup. Penerbangan tertunda. Orang sulit bernapas. Apinya lokal. Dampaknya bisa sebesar negara tetangga.",
+    "choice_title": "Pilihan ada di tanganmu.",
+    "choice_text": "Hutan tak bisa menunggu. Namun ia tak harus sirna begitu saja.",
+    "return_title": "Warna-warni pun kembali.",
+    "return_text": "Ketika seseorang bertindak, akhir cerita berubah. Catnya masih basah. Rumah ini masih dapat diselamatkan.",
+    "proof_title": "Bukti tersaji secara transparan.",
+    "proof_text": "Setiap titik data di situs ini berasal dari sumber terverifikasi. Setiap pernyataan ditandai dengan tingkat buktinya."
+  },
+  "characters": {
+    "orangutan": {
+      "name": "Tuki",
+      "species": "Orangutan Kalimantan",
+      "scientific": "Pongo pygmaeus"
+    },
+    "pangolin": {
+      "name": "Liku",
+      "species": "Trenggiling Sunda",
+      "scientific": "Manis javanica"
+    },
+    "sunbear": {
+      "name": "Madu",
+      "species": "Beruang Madu",
+      "scientific": "Helarctos malayanus"
+    },
+    "mousedeer": {
+      "name": "Kecil",
+      "species": "Kancil",
+      "scientific": "Tragulus kanchil"
+    },
+    "hornbill": {
+      "name": "Rangkong",
+      "species": "Enggang Gading",
+      "scientific": "Rhinoplax vigil"
+    }
+  },
+  "actions": {
+    "rescue": {
+      "title": "Penyelamatan",
+      "desc": "Dukung tim evakuasi satwa saat api mengepung habitat mereka."
+    },
+    "protect": {
+      "title": "Perlindungan",
+      "desc": "Bantu melindungi hektare habitat penting berikutnya."
+    },
+    "watch": {
+      "title": "Pantau",
+      "desc": "Awasi kawasan hutan dengan data satelit langsung."
+    },
+    "restore": {
+      "title": "Pemulihan",
+      "desc": "Bantu penanaman kembali koridor hutan yang terbakar."
+    }
+  },
+  "partners": {
+    "iar_yiari": {
+      "name": "International Animal Rescue / YIARI",
+      "cta": "Selamatkan orangutan yang terkepung api."
+    },
+    "bos_foundation": {
+      "name": "BOS Foundation",
+      "cta": "Dukung orangutan hasil penyelamatan di Kalimantan."
+    },
+    "nasa_firms": {
+      "name": "NASA FIRMS",
+      "cta": "Lihat data kebakaran langsung."
+    },
+    "mongabay": {
+      "name": "Mongabay",
+      "cta": "Baca laporan lapangan."
+    },
+    "nasa_eo": {
+      "name": "NASA Earth Observatory",
+      "cta": "Baca laporan citra satelit."
+    },
+    "conservation_intl": {
+      "name": "Conservation International",
+      "cta": "Lindungi hektare hutan habitat orangutan."
+    }
+  },
+  "map": {
+    "title": "Peta Api & Habitat",
+    "subtitle": "Kalimantan, Borneo",
+    "layers": {
+      "fire": "Titik Api Aktif",
+      "burned": "Area Terbakar",
+      "protected": "Kawasan Lindung",
+      "species": "Sebaran Satwa"
+    },
+    "filters": {
+      "time_24h": "24 jam terakhir",
+      "time_3d": "3 hari terakhir",
+      "time_7d": "7 hari terakhir",
+      "region_west": "Kalimantan Barat",
+      "region_central": "Kalimantan Tengah",
+      "region_all": "Seluruh Kalimantan"
+    },
+    "click_info": {
+      "sensor": "Sensor Satelit",
+      "time": "Waktu Deteksi",
+      "brightness": "Tingkat Kecerahan",
+      "confidence": "Tingkat Kepercayaan",
+      "nearest_pa": "Kawasan Lindung Terdekat",
+      "species_overlap": "Tumpang Tindih Sebaran Satwa"
+    }
+  },
+  "evidence_levels": {
+    "verified_rescue": {
+      "label": "Catatan Evakuasi Terverifikasi",
+      "desc": "Peristiwa penyelamatan tercatat oleh mitra konservasi"
+    },
+    "range_overlap": {
+      "label": "Tumpang Tindih Sebaran Satwa",
+      "desc": "Titik api terdeteksi di dalam sebaran resmi spesies"
+    },
+    "fire_detection": {
+      "label": "Deteksi Kebakaran Satelit",
+      "desc": "Anomali termal terdeteksi oleh sensor satelit"
+    },
+    "burned_area": {
+      "label": "Bukti Area Terbakar",
+      "desc": "Area yang dipetakan terbakar menurut data satelit"
+    },
+    "needs_verification": {
+      "label": "Perlu Verifikasi Lapangan",
+      "desc": "Sinyal satelit memerlukan konfirmasi langsung di darat"
+    }
+  },
+  "dashboard": {
+    "title": "Rumah Terlindungi Anda",
+    "pick_prompt": "Pilih kawasan rumah untuk dipantau",
+    "status_safe": "Aman — tidak ada sinyal api terkini di sekitar",
+    "status_risk": "Berisiko — sinyal api satelit terdeteksi di sekitar",
+    "status_recovering": "Masa Pemulihan — area baru terbakar dalam masa regenerasi"
+  },
+  "transparency": {
+    "title": "Transparansi Data",
+    "subtitle": "Setiap data memiliki sumber. Setiap sumber memiliki lisensi resmi.",
+    "glossary_title": "Glosarium",
+    "what_we_dont_claim": "Hal yang Tidak Kami Klaim",
+    "reach": {
+    "kicker": "Habitat of Our Missing Endangered",
+    "title": "Asap menyimpan alamatnya.",
+    "lede": "Kebakaran di Kalimantan bisa menjadi seminggu jendela tertutup di negara lain.",
+    "body": "H.O.M.E. adalah habitat satwa terancam yang sedang kehilangan rumah. Cerita bermula di pohon Tuki. Cerita tidak berhenti di perbatasan. Malaysia, Brunei, dan Singapura berbagi udara yang sama. Di pulau yang sama, Sarawak, Sabah, dan Brunei bisa hidup dengan asap gambut yang menyala di Kalimantan. Melewati laut, monsun barat daya pernah membawa asap itu ke Semenanjung Malaysia dan Singapura. Pada musim yang parah, sekolah ditutup, penerbangan menunggu, dan orang sulit bernapas. Jangkauannya bisa sangat besar. Halaman ini tidak mengubahnya menjadi angka kematian.",
+    "neighbors_title": "Negara tetangga",
+    "neighbors_body": "Angka di bawah adalah deteksi pada cuplikan data di Kalimantan Barat dan Tengah, atau di selatan lintang 1°U. Ini menandai wilayah udara bersama dan jalur musim yang sudah dikenal. Ini bukan ramalan asap, dan bukan jumlah orang sakit.",
+    "sdg_title": "Tujuan Pembangunan Berkelanjutan",
+    "sdg_body": "Enam tujuan bertemu dalam satu musim api. Kotak memakai nomor dan warna resmi. Gambarnya asli, jadi bukan ikon resmi Perserikatan Bangsa-Bangsa.",
+    "models_title": "Apa yang dibaca model",
+    "models_body": "Python berjalan secara luring pada setiap cuplikan: titik api, area terbakar, catatan temuan, kawasan lindung, spesies, dan tabel NDVI. Peramban hanya menampilkan JSON. Tidak ada ramalan ke mana satwa berjalan, atau apakah ada yang mati.",
+    "pathway_count": "Deteksi pada jalur monsun, dari cuplikan data",
+    "airshed_count": "Deteksi di wilayah udara bersama Borneo, dari cuplikan data"
+  },
+    "claims": [
+      "Kami tidak mengklaim bahwa deteksi titik api membuktikan kematian satwa liar.",
+      "Kami tidak memprediksi pergerakan satwa semata-mata berdasarkan data satelit.",
+      "Kami tidak mengklaim bahwa tumpang tindih sebaran berarti satwa pasti berada di titik koordinat tersebut.",
+      "Kami tidak memproses donasi secara langsung. Seluruh donasi langsung disalurkan ke organisasi mitra konservasi.",
+      "Kami tidak mengklaim status kawasan lindung menjamin habitat sepenuhnya aman."
+    ]
+  },
+  "future": {
+    "title": "Data untuk Masa Depan",
+    "subtitle": "Membangun lapisan bukti untuk konservasi hutan",
+    "planned_label": "Direncanakan",
+    "products": {
+      "habitat_risk": {
+        "title": "Laporan Risiko Habitat",
+        "desc": "Penilaian bulanan paparan kebakaran di seluruh koridor satwa liar kritis."
+      },
+      "fire_api": {
+        "title": "API Paparan Kebakaran",
+        "desc": "Akses terprogram ke data deteksi api yang dipadukan dengan data habitat dan spesies."
+      },
+      "restoration": {
+        "title": "Pelacak Pemulihan Hutan",
+        "desc": "Pantau pemulihan pasca-kebakaran dengan indeks vegetasi berbasis satelit."
+      },
+      "corridor": {
+        "title": "Pemantau Koridor Satwa",
+        "desc": "Lacak konektivitas antar kawasan lindung untuk pergerakan satwa liar."
+      },
+      "esg": {
+        "title": "Dasbor ESG",
+        "desc": "Pelaporan dampak lingkungan untuk program keberlanjutan korporasi."
+      }
+    },
+    "cta": "Tertarik bermitra? Hubungi kami."
+  },
+  "sponsor": {
+    "title": "Bermitra dengan Kami",
+    "subtitle": "Dukung konservasi hutan melalui kemitraan dan sponsor",
+    "corridor_title": "Adopsi Koridor Satwa",
+    "corridor_desc": "Sponsori pemantauan satelit untuk koridor satwa antar kawasan lindung.",
+    "firewatch_title": "Sponsori Zona Pantau Api",
+    "firewatch_desc": "Danai pemantauan api berkelanjutan untuk wilayah hutan tertentu.",
+    "widget_title": "Sematkan Peta",
+    "widget_desc": "Pasang peta interaktif api & habitat H.O.M.E. di situs web Anda.",
+    "sponsor_label": "Disponsori",
+    "media_kit": "Unduh Media Kit",
+    "inquire": "Kirim Pertanyaan"
+  },
+  "common": {
+    "donation_disclaimer": "H.O.M.E. tidak memproses donasi. Seluruh donasi dikelola langsung oleh mitra konservasi terpilih.",
+    "illustrated_label": "Karakter ilustrasi, terinspirasi oleh spesies nyata.",
+    "last_updated": "Terakhir diperbarui",
+    "refresh": "Segarkan data",
+    "download_data": "Unduh JSON",
+    "loading": "Memuat...",
+    "error": "Terjadi kesalahan",
+    "read_more": "Baca selengkapnya",
+    "learn_more": "Pelajari lebih lanjut",
+    "help_rescue": "Bantu Evakuasi Mereka",
+    "explore_map": "Jelajahi Peta",
+    "see_fire_data": "Lihat Data Api Langsung",
+    "source": "Sumber",
+    "attribution": "Atribusi",
+    "back_to_top": "Kembali ke atas"
+  }
+}

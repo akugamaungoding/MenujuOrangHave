@@ -1,0 +1,150 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "wdpa-1247",
+      "properties": {
+        "WDPAID": 1247,
+        "NAME": "Tanjung Puting National Park",
+        "ORIG_NAME": "Taman Nasional Tanjung Puting",
+        "DESIG_ENG": "National Park",
+        "IUCN_CAT": "II",
+        "REP_AREA": 4150.4,
+        "PROVINCE": "Central Kalimantan",
+        "STATUS": "Designated",
+        "STATUS_YR": 1982,
+        "GOV_TYPE": "Federal or national ministry",
+        "KEY_SPECIES": ["Bornean Orangutan", "Proboscis Monkey", "Sun Bear"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [111.72, -2.60],
+            [112.28, -2.60],
+            [112.28, -3.35],
+            [111.72, -3.35],
+            [111.72, -2.60]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "wdpa-3023",
+      "properties": {
+        "WDPAID": 3023,
+        "NAME": "Betung Kerihun National Park",
+        "ORIG_NAME": "Taman Nasional Betung Kerihun",
+        "DESIG_ENG": "National Park",
+        "IUCN_CAT": "II",
+        "REP_AREA": 8000.0,
+        "PROVINCE": "West Kalimantan",
+        "STATUS": "Designated",
+        "STATUS_YR": 1995,
+        "GOV_TYPE": "Federal or national ministry",
+        "KEY_SPECIES": ["Bornean Orangutan", "Helmeted Hornbill", "Sun Bear"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [112.35, 0.82],
+            [114.15, 0.82],
+            [114.15, 1.58],
+            [112.35, 1.58],
+            [112.35, 0.82]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "wdpa-19793",
+      "properties": {
+        "WDPAID": 19793,
+        "NAME": "Bukit Baka Bukit Raya National Park",
+        "ORIG_NAME": "Taman Nasional Bukit Baka Bukit Raya",
+        "DESIG_ENG": "National Park",
+        "IUCN_CAT": "II",
+        "REP_AREA": 1810.9,
+        "PROVINCE": "West & Central Kalimantan",
+        "STATUS": "Designated",
+        "STATUS_YR": 1992,
+        "GOV_TYPE": "Federal or national ministry",
+        "KEY_SPECIES": ["Helmeted Hornbill", "Sun Bear", "Clouded Leopard"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [112.12, -0.92],
+            [112.85, -0.92],
+            [112.85, -0.42],
+            [112.12, -0.42],
+            [112.12, -0.92]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "wdpa-555547942",
+      "properties": {
+        "WDPAID": 555547942,
+        "NAME": "Danau Sentarum National Park",
+        "ORIG_NAME": "Taman Nasional Danau Sentarum",
+        "DESIG_ENG": "National Park & Ramsar Site",
+        "IUCN_CAT": "II",
+        "REP_AREA": 1320.0,
+        "PROVINCE": "West Kalimantan",
+        "STATUS": "Designated",
+        "STATUS_YR": 1999,
+        "GOV_TYPE": "Federal or national ministry",
+        "KEY_SPECIES": ["Lesser Mouse Deer", "False Gharial", "Proboscis Monkey"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [111.90, 0.68],
+            [112.42, 0.68],
+            [112.42, 1.08],
+            [111.90, 1.08],
+            [111.90, 0.68]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "wdpa-1249",
+      "properties": {
+        "WDPAID": 1249,
+        "NAME": "Kutai National Park",
+        "ORIG_NAME": "Taman Nasional Kutai",
+        "DESIG_ENG": "National Park",
+        "IUCN_CAT": "II",
+        "REP_AREA": 1986.3,
+        "PROVINCE": "East Kalimantan",
+        "STATUS": "Designated",
+        "STATUS_YR": 1982,
+        "GOV_TYPE": "Federal or national ministry",
+        "KEY_SPECIES": ["Bornean Orangutan", "Sun Bear", "Sunda Pangolin"]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [117.10, 0.12],
+            [117.60, 0.12],
+            [117.60, 0.62],
+            [117.10, 0.62],
+            [117.10, 0.12]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%" role="img" aria-labelledby="orangutan-title orangutan-desc">
+  <!-- Illustrated character, inspired by real species -->
+  <title id="orangutan-title">Tuki the Bornean Orangutan</title>
+  <desc id="orangutan-desc">A gentle watercolor illustration of a young Bornean orangutan holding a forest leaf.</desc>
+  <defs>
+    <!-- Soft watercolor bleed filter -->
+    <filter id="wc-filter-orangutan" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3.5" xChannelSelector="R" yChannelSelector="G" result="displaced" />
+      <feGaussianBlur in="displaced" stdDeviation="0.6" result="softened" />
+      <feMerge>
+        <feMergeNode in="softened" />
+        <feMergeNode in="SourceGraphic" opacity="0.65" />
+      </feMerge>
+    </filter>
+
+    <radialGradient id="grad-fur" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#E8956A" />
+      <stop offset="60%" stop-color="#D4733F" />
+      <stop offset="100%" stop-color="#B35222" />
+    </radialGradient>
+
+    <radialGradient id="grad-face" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#F5E6C8" />
+      <stop offset="70%" stop-color="#E8CFA6" />
+      <stop offset="100%" stop-color="#D4A574" />
+    </radialGradient>
+
+    <linearGradient id="grad-leaf" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#8BB87D" />
+      <stop offset="50%" stop-color="#6B8F5E" />
+      <stop offset="100%" stop-color="#4A7C59" />
+    </linearGradient>
+
+    <radialGradient id="grad-blush" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E8956A" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#E8956A" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="grad-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FDF6E3" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#FDF6E3" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background watercolor glow -->
+  <circle id="bg-glow" cx="150" cy="150" r="130" fill="url(#grad-glow)" />
+
+  <g id="tuki" filter="url(#wc-filter-orangutan)">
+    <!-- Round cute body -->
+    <ellipse id="tuki-body" cx="150" cy="205" rx="68" ry="60" fill="url(#grad-fur)" />
+    <!-- Fur texture blobs (watercolor tufts) -->
+    <path id="tuki-fur-blob-1" d="M85 195 Q70 215 90 230 Q75 245 105 250" fill="#B35222" opacity="0.4" />
+    <path id="tuki-fur-blob-2" d="M215 195 Q230 215 210 230 Q225 245 195 250" fill="#B35222" opacity="0.4" />
+    <path id="tuki-fur-blob-chest" d="M125 180 Q150 170 175 180 Q185 220 150 235 Q115 220 125 180 Z" fill="#E8956A" opacity="0.3" />
+
+    <!-- Feet/Paws tucked under -->
+    <ellipse id="tuki-foot-left" cx="112" cy="254" rx="22" ry="14" fill="#D4733F" />
+    <ellipse id="tuki-foot-right" cx="188" cy="254" rx="22" ry="14" fill="#D4733F" />
+
+    <!-- Head & Ears -->
+    <ellipse id="tuki-ear-left" cx="82" cy="122" rx="14" ry="15" fill="#C26735" />
+    <ellipse id="tuki-ear-inner-left" cx="84" cy="122" rx="7" ry="8" fill="#F5E6C8" opacity="0.8" />
+    <ellipse id="tuki-ear-right" cx="218" cy="122" rx="14" ry="15" fill="#C26735" />
+    <ellipse id="tuki-ear-inner-right" cx="216" cy="122" rx="7" ry="8" fill="#F5E6C8" opacity="0.8" />
+
+    <!-- Main Head -->
+    <circle id="tuki-head" cx="150" cy="125" r="58" fill="url(#grad-fur)" />
+
+    <!-- Crown tufts of hair -->
+    <path id="tuki-crown-fur" d="M135 72 Q142 55 150 58 Q158 55 165 72" fill="#E8956A" stroke="#B35222" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Heart-shaped/Round Muzzle Mask -->
+    <ellipse id="tuki-face" cx="150" cy="138" rx="42" ry="34" fill="url(#grad-face)" />
+
+    <!-- Cheeks blush -->
+    <circle id="tuki-blush-left" cx="122" cy="144" r="10" fill="url(#grad-blush)" />
+    <circle id="tuki-blush-right" cx="178" cy="144" r="10" fill="url(#grad-blush)" />
+
+    <!-- Big Soulful Eyes -->
+    <g id="tuki-eyes">
+      <!-- Left Eye -->
+      <circle cx="132" cy="124" r="9.5" fill="#2C2C2C" />
+      <circle cx="130.5" cy="121.5" r="3.5" fill="#FFFDF7" />
+      <circle cx="134.5" cy="126" r="1.5" fill="#FFFDF7" />
+      <!-- Soft eye reflection amber arc -->
+      <path d="M125 127 Q132 133 139 127" stroke="#D4A574" stroke-width="1.2" fill="none" opacity="0.6" />
+
+      <!-- Right Eye -->
+      <circle cx="168" cy="124" r="9.5" fill="#2C2C2C" />
+      <circle cx="166.5" cy="121.5" r="3.5" fill="#FFFDF7" />
+      <circle cx="170.5" cy="126" r="1.5" fill="#FFFDF7" />
+      <path d="M161 127 Q168 133 175 127" stroke="#D4A574" stroke-width="1.2" fill="none" opacity="0.6" />
+
+      <!-- Gentle Eyebrows -->
+      <path d="M124 110 Q133 107 141 112" stroke="#B35222" stroke-width="2.5" stroke-linecap="round" fill="none" />
+      <path d="M176 110 Q167 107 159 112" stroke="#B35222" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- Cute Nose & Sweet Smile -->
+    <g id="tuki-snout">
+      <ellipse cx="147" cy="138" rx="2" ry="2.5" fill="#B35222" />
+      <ellipse cx="153" cy="138" rx="2" ry="2.5" fill="#B35222" />
+      <path d="M142 147 Q150 154 158 147" stroke="#8A3D18" stroke-width="2.2" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- Arms -->
+    <!-- Right Arm resting peacefully -->
+    <path id="tuki-arm-right" d="M198 180 Q225 210 205 235 Q195 240 185 225" fill="#D4733F" />
+
+    <!-- Left Arm holding the leaf -->
+    <path id="tuki-arm-left" d="M102 180 Q75 205 92 230 Q105 235 120 215" fill="#D4733F" />
+    <circle id="tuki-hand-left" cx="106" cy="222" r="10" fill="#E8956A" />
+
+    <!-- The Leaf Tuki is holding -->
+    <g id="tuki-leaf" transform="rotate(-15 110 220)">
+      <path d="M110 220 Q85 180 120 160 Q135 190 110 220 Z" fill="url(#grad-leaf)" />
+      <!-- Leaf Veins -->
+      <path d="M110 218 Q115 195 120 162" stroke="#355E3B" stroke-width="1.5" stroke-linecap="round" fill="none" />
+      <path d="M113 202 Q105 196 98 195" stroke="#355E3B" stroke-width="1" stroke-linecap="round" fill="none" />
+      <path d="M115 188 Q125 184 130 180" stroke="#355E3B" stroke-width="1" stroke-linecap="round" fill="none" />
+      <path d="M117 175 Q110 172 105 170" stroke="#355E3B" stroke-width="1" stroke-linecap="round" fill="none" />
+      <!-- Dewdrop on leaf -->
+      <circle cx="116" cy="182" r="2.5" fill="#FFFDF7" opacity="0.75" />
+    </g>
+  </g>
+</svg>

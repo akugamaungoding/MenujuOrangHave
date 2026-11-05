@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Paper Grain Turbulence Filter -->
+    <filter id="paper-grain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="4" stitchTiles="stitch" result="noise" />
+      <feColorMatrix type="matrix" values="
+        0.05 0 0 0 0.96
+        0 0.05 0 0 0.94
+        0 0 0.05 0 0.88
+        0 0 0 0.18 0" result="coloredNoise" />
+      <feBlend in="SourceGraphic" in2="coloredNoise" mode="multiply" />
+    </filter>
+  </defs>
+  <!-- Base Cream Paper Layer -->
+  <rect width="100%" height="100%" fill="#FDF6E3" />
+  <!-- Filtered Noise Layer -->
+  <rect width="100%" height="100%" fill="#F5E6C8" filter="url(#paper-grain)" opacity="0.6" />
+  <!-- Subtle handmade fibrous washes -->
+  <g opacity="0.08" stroke="#D4A574" stroke-width="0.8">
+    <path d="M20 80 Q90 85 160 78 T320 84" fill="none" />
+    <path d="M50 190 Q140 185 240 195 T380 188" fill="none" />
+    <path d="M10 290 Q120 298 230 286 T390 294" fill="none" />
+  </g>
+</svg>

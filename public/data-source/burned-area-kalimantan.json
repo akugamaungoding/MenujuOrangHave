@@ -1,0 +1,242 @@
+[
+  {
+    "id": "burn-kal-2023-09-01",
+    "month": "2023-09",
+    "product": "MODIS MCD64A1",
+    "resolution": "500m",
+    "area_sqkm": 245.8,
+    "area_ha": 24580,
+    "location_name": "Pulang Pisau Peatland Complex",
+    "province": "Central Kalimantan",
+    "confidence": "high",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [114.15, -2.85],
+          [114.38, -2.85],
+          [114.42, -2.68],
+          [114.20, -2.65],
+          [114.15, -2.85]
+        ]
+      ]
+    },
+    "source_id": "burned-area-snapshot"
+  },
+  {
+    "id": "burn-kal-2023-09-02",
+    "month": "2023-09",
+    "product": "MODIS MCD64A1",
+    "resolution": "500m",
+    "area_sqkm": 182.4,
+    "area_ha": 18240,
+    "location_name": "Kotawaringin Timur Lowland Peat",
+    "province": "Central Kalimantan",
+    "confidence": "high",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [112.82, -2.62],
+          [113.08, -2.62],
+          [113.12, -2.48],
+          [112.86, -2.45],
+          [112.82, -2.62]
+        ]
+      ]
+    },
+    "source_id": "burned-area-snapshot"
+  },
+  {
+    "id": "burn-kal-2023-10-01",
+    "month": "2023-10",
+    "product": "Sentinel-2 MSI Level-2A",
+    "resolution": "20m",
+    "area_sqkm": 142.1,
+    "area_ha": 14210,
+    "location_name": "Ketapang South Coastal Peat Swamp",
+    "province": "West Kalimantan",
+    "confidence": "high",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [110.02, -1.95],
+          [110.22, -1.95],
+          [110.25, -1.78],
+          [110.05, -1.75],
+          [110.02, -1.95]
+        ]
+      ]
+    },
+    "source_id": "burned-area-snapshot"
+  },
+  {
+    "id": "burn-kal-2023-10-02",
+    "month": "2023-10",
+    "product": "MODIS MCD64A1",
+    "resolution": "500m",
+    "area_sqkm": 310.5,
+    "area_ha": 31050,
+    "location_name": "Sebangau Basin Eastern Peat Corridor",
+    "province": "Central Kalimantan",
+    "confidence": "high",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [113.80, -2.42],
+          [114.05, -2.42],
+          [114.10, -2.18],
+          [113.82, -2.15],
+          [113.80, -2.42]
+        ]
+      ]
+    },
+    "source_id": "burned-area-snapshot"
+  },
+  {
+    "id": "burn-kal-2023-10-03",
+    "month": "2023-10",
+    "product": "Sentinel-2 MSI Level-2A",
+    "resolution": "20m",
+    "area_sqkm": 94.6,
+    "area_ha": 9460,
+    "location_name": "Banjarbaru Peat Scrubland",
+    "province": "South Kalimantan",
+    "confidence": "verified",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [114.72, -3.52],
+          [114.92, -3.52],
+          [114.95, -3.38],
+          [114.75, -3.36],
+          [114.72, -3.52]
+        ]
+      ]
+    },
+    "source_id": "burned-area-snapshot"
+  },
+  {
+    "id": "burn-kal-2024-03-01",
+    "month": "2024-03",
+    "product": "Sentinel-2 MSI Level-2A",
+    "resolution": "20m",
+    "area_sqkm": 76.2,
+    "area_ha": 7620,
+    "location_name": "Mempawah - Kubu Raya Border Peat",
+    "province": "West Kalimantan",
+    "confidence": "high",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [109.18, -0.22],
+          [109.42, -0.22],
+          [109.45, -0.05],
+          [109.21, -0.04],
+          [109.18, -0.22]
+        ]
+      ]
+    },
+    "source_id": "burned-area-snapshot"
+  },
+  {
+    "id": "burn-kal-2024-08-01",
+    "month": "2024-08",
+    "product": "MODIS MCD64A1",
+    "resolution": "500m",
+    "area_sqkm": 118.0,
+    "area_ha": 11800,
+    "location_name": "Katingan Peat Dome Outskirts",
+    "province": "Central Kalimantan",
+    "confidence": "nominal",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [113.25, -2.15],
+          [113.52, -2.15],
+          [113.55, -1.98],
+          [113.28, -1.95],
+          [113.25, -2.15]
+        ]
+      ]
+    },
+    "source_id": "burned-area-snapshot"
+  },
+  {
+    "id": "burn-kal-2024-08-02",
+    "month": "2024-08",
+    "product": "Sentinel-2 MSI Level-2A",
+    "resolution": "20m",
+    "area_sqkm": 62.4,
+    "area_ha": 6240,
+    "location_name": "Samboja Peat Margin & Grasslands",
+    "province": "East Kalimantan",
+    "confidence": "high",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [116.82, -1.22],
+          [117.02, -1.22],
+          [117.05, -1.08],
+          [116.84, -1.06],
+          [116.82, -1.22]
+        ]
+      ]
+    },
+    "source_id": "burned-area-snapshot"
+  },
+  {
+    "id": "burn-kal-2024-09-01",
+    "month": "2024-09",
+    "product": "MODIS MCD64A1",
+    "resolution": "500m",
+    "area_sqkm": 164.3,
+    "area_ha": 16430,
+    "location_name": "Kapuas Delta Wetland Margins",
+    "province": "Central Kalimantan",
+    "confidence": "high",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [114.28, -2.98],
+          [114.52, -2.98],
+          [114.55, -2.76],
+          [114.30, -2.74],
+          [114.28, -2.98]
+        ]
+      ]
+    },
+    "source_id": "burned-area-snapshot"
+  },
+  {
+    "id": "burn-kal-2024-09-02",
+    "month": "2024-09",
+    "product": "MODIS MCD64A1",
+    "resolution": "500m",
+    "area_sqkm": 88.7,
+    "area_ha": 8870,
+    "location_name": "Berau Lowland Secondary Shrubland",
+    "province": "East Kalimantan",
+    "confidence": "nominal",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [117.35, 2.05],
+          [117.58, 2.05],
+          [117.60, 2.22],
+          [117.38, 2.24],
+          [117.35, 2.05]
+        ]
+      ]
+    },
+    "source_id": "burned-area-snapshot"
+  }
+]
