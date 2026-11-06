@@ -12,7 +12,7 @@ import {
 const SPECIES_PROFILES = {
   orangutan: {
     slug: 'orangutan',
-    characterName: 'Tuki',
+    characterName: 'Jara',
     speciesName: 'Bornean Orangutan',
     scientificName: 'Pongo pygmaeus',
     iucnStatus: 'CR',
